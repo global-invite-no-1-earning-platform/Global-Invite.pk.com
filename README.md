@@ -1,1 +1,0 @@
-# Global-Invite.pk.com

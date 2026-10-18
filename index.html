@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="7JSMj3OkYuq58YVdeR59OqxUc-0z4rsEgsZTIpwuPAQ" />
+    
+    <!-- Meta Tags for SEO and Sharing -->
+    <meta name="description" content="Global Invest Platform - High-yield advertising network and secure daily micro-investments.">
+    <meta name="keywords" content="global invest, earn money online, passive income">
+    <meta name="author" content="Global Invest Platform">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Global Invest Platform - Official Portal">
+    <meta property="og:description" content="Activate VIP packages to secure daily monetization dividends and manage payouts smoothly.">
+    <meta property="og:image" content="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/svgs/solid/chart-line.svg">
+    <meta property="og:url" content="https://global-invest-no-1-platfrom.github.io/global-invest.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Global invest PLATFORM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0d47a1;
+            --secondary: #1565c0;
+            --accent: #2979ff;
+            --bg: #f0f2f5;
+            --white: #ffffff;
+            --text: #1a237e;
+            --gray: #757575;
+            --success: #00c853;
+            --warning: #ffb300;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; -webkit-tap-highlight-color: transparent; transition: background-color 0.8s ease, color 0.4s ease; }
+        body { background-color: var(--bg); color: #333; overflow-x: hidden; }
+        .hidden { display: none !important; }
+        
+        #app-layout { padding-bottom: 70px; }
+
+        header { background: var(--white); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .logo { font-size: 18px; font-weight: 800; color: var(--primary); letter-spacing: 1px; cursor: pointer; display: flex; align-items: center; }
+
+        .auth-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; background: linear-gradient(135deg, var(--primary), var(--accent)); }
+        .auth-box { background: var(--white); width: 100%; max-width: 400px; padding: 30px 20px; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.2); text-align: center; }
+        .auth-box h2 { color: var(--primary); margin-bottom: 20px; font-weight: 800; }
+        .link-text { color: var(--accent); font-size: 13px; font-weight: 600; cursor: pointer; margin-top: 15px; display: block; }
+
+        .dash-card { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; margin: 15px; padding: 25px; border-radius: 25px; box-shadow: 0 10px 20px rgba(13, 71, 161, 0.2); }
+        .dash-btns { display: flex; gap: 10px; margin-top: 20px; }
+        .btn-action { flex: 1; padding: 12px; border-radius: 12px; border: none; font-weight: 700; cursor: pointer; font-size: 13px; }
+        .btn-depo { background: var(--white); color: var(--primary); }
+        .btn-with { background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(5px); }
+
+        .status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 15px; }
+        .status-box { background: var(--white); padding: 15px; border-radius: 18px; display: flex; align-items: center; gap: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .status-box i { width: 40px; height: 40px; background: #e3f2fd; color: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .status-info p { font-size: 9px; color: var(--gray); font-weight: 700; text-transform: uppercase; }
+        .status-info h4 { font-size: 14px; color: var(--text); }
+
+        .menu-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 20px 15px; }
+        .menu-item { text-align: center; cursor: pointer; }
+        .menu-icon { background: var(--white); width: 55px; height: 55px; border-radius: 15px; margin: 0 auto 5px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--secondary); box-shadow: 0 4px 10px rgba(0,0,0,0.05); position: relative; }
+        .menu-item span { font-size: 10px; font-weight: 600; color: #555; }
+
+        .section-title { padding: 15px; font-weight: 700; color: var(--text); font-size: 18px; }
+        .card { background: var(--white); padding: 20px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); margin: 0 15px 15px; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        .input-group label { display: block; font-size: 12px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+        .input-group input, .input-group select, .input-group textarea { width: 100%; padding: 14px; border-radius: 12px; border: 1.5px solid #eee; outline: none; transition: 0.3s; font-size:14px; background:#f8f9fa; }
+        .input-group input:focus, .input-group select:focus, .input-group textarea:focus { border-color: var(--primary); background:var(--white); }
+        .input-group input:disabled { background: #e0e0e0; cursor: not-allowed; border-color: #ccc; color:#666; font-weight:bold;}
+        
+        .btn-primary { background: var(--secondary); color: white; width: 100%; padding: 15px; border: none; border-radius: 12px; font-weight: 700; font-size: 15px; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-primary:active { transform: scale(0.98); }
+        .btn-danger { background: #e53935; color: white; width: 100%; padding: 12px; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; }
+
+        .settings-list { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+        .settings-item { padding: 15px 20px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .settings-item:last-child { border-bottom: none; }
+        .settings-item i.left-icon { color: var(--primary); width: 30px; font-size: 16px; }
+        .settings-item span { font-size: 14px; font-weight: 500; }
+
+        .plan-card { background: var(--white); margin: 15px; border-radius: 20px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #eef2f6; position: relative; }
+        .plan-header { background: var(--secondary); color: white; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: 700; }
+        .plan-price-box { background: #eef2f6; padding: 20px; text-align: center; margin: 15px; border-radius: 15px; }
+        .plan-price-box span { font-size: 12px; color: var(--secondary); font-weight: 600; text-transform: uppercase; }
+        .plan-price-box h2 { color: var(--secondary); font-size: 32px; margin-top: 5px; font-weight:800; }
+        .plan-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 15px 15px; }
+        .p-item { background: #f8f9fa; padding: 15px 10px; border-radius: 12px; text-align: center; border: 1px solid #f0f0f0; }
+        .p-item i { color: var(--secondary); margin-bottom: 8px; font-size: 20px; }
+        .p-item small { display: block; font-size: 10px; color: var(--gray); text-transform: uppercase; margin-bottom:2px; }
+        .p-item p { font-weight: 800; font-size: 15px; color:#222; }
+
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: var(--white); display: flex; justify-content: space-around; padding: 12px 0; box-shadow: 0 -5px 15px rgba(0,0,0,0.05); z-index: 1000; }
+        .nav-link { text-align: center; color: #aaa; font-size: 10px; font-weight: 600; cursor: pointer; }
+        .nav-link.active { color: var(--primary); }
+        .nav-link i { font-size: 18px; display: block; margin-bottom: 3px; }
+
+        .h-item { padding: 12px 0; border-bottom: 1px solid #eee; display:flex; justify-content: space-between; align-items: center;}
+        .h-item h4 { font-size: 14px; color: var(--text); }
+        .h-item p { font-size: 11px; color: var(--gray); margin-top:2px; }
+        .badge { padding: 4px 8px; border-radius: 8px; font-size: 10px; font-weight: 700; color: white; }
+        .bg-warning { background: var(--warning); }
+        .bg-success { background: var(--success); }
+        .bg-danger { background: #e53935; }
+
+        #loader { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.9); z-index: 9999; display:flex; align-items:center; justify-content:center; flex-direction:column; color:var(--primary); font-weight:bold; }
+        
+        .admin-card { background: var(--white); margin: 10px; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); color:#333; }
+        .user-row { background: #f9f9f9; padding: 10px; margin-bottom: 10px; border-radius: 8px; border-left: 4px solid var(--primary); }
+        
+        /* RULEBOOK MODAL CSS */
+        #rulebookModal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10000; display: flex; align-items: center; justify-content: center; }
+        .rulebook-box { background: var(--white); width: 90%; max-width: 400px; border-radius: 20px; padding: 25px 20px; text-align: center; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .rulebook-box h3 { color: var(--primary); margin-bottom: 10px; font-weight: 800; display:flex; align-items:center; justify-content:center; gap:10px; font-size: 20px; }
+        .rulebook-box h4 { font-size: 13px; color: #555; margin-bottom: 20px; }
+        .rulebook-list { text-align: left; font-size: 13px; color: #444; margin-bottom: 20px; line-height: 1.6; }
+        .rulebook-list p { margin-bottom: 10px; }
+        .btn-got-it { background: var(--secondary); color: white; width: 100%; padding: 14px; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s;}
+        .btn-got-it:active { transform: scale(0.95); }
+
+        /* ADVANCED ADMIN TABS CSS */
+        .admin-nav { display: flex; overflow-x: auto; background: #111; position: sticky; top: 0; z-index: 10; border-bottom: 2px solid #333; }
+        .admin-nav-item { flex: 1; min-width: 80px; text-align: center; color: white; padding: 15px 10px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+        .admin-nav-item.active { background: #e53935; color: white; }
+        .admin-tab-content { display: none; }
+        .admin-tab-content.active { display: block; }
+        .stat-box { background: #333; color: white; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 10px; }
+        .stat-box h2 { color: #58e596; }
+
+        /* ================= 3D GLOW BADGES STYLING ================= */
+        .glow-update-badge {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: #ff1744;
+            color: white;
+            font-size: 8px;
+            font-weight: 900;
+            padding: 1px 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(255, 23, 68, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            animation: glow4colors 4s infinite, float3d 2.5s ease-in-out infinite;
+            z-index: 10;
+            pointer-events: none;
+            border: 1px solid rgba(255,255,255,0.4);
+            white-space: nowrap;
+        }
+        @keyframes glow4colors {
+            0% { background-color: #ff1744; box-shadow: 0 0 8px #ff1744, inset 0 0 3px #ff1744; }
+            25% { background-color: #00e676; box-shadow: 0 0 8px #00e676, inset 0 0 3px #00e676; }
+            50% { background-color: #2979ff; box-shadow: 0 0 8px #2979ff, inset 0 0 3px #2979ff; }
+            75% { background-color: #ffea00; box-shadow: 0 0 8px #ffea00, inset 0 0 3px #ffea00; color: #000; }
+            100% { background-color: #ff1744; box-shadow: 0 0 8px #ff1744, inset 0 0 3px #ff1744; color: #fff; }
+        }
+        @keyframes float3d {
+            0% { transform: translateY(0) scale(1) rotate(0deg); }
+            50% { transform: translateY(-2px) scale(1.08) rotate(2deg); }
+            100% { transform: translateY(0) scale(1) rotate(0deg); }
+        }
+
+        /* ================= DARK THEME STYLING ================= */
+        body.dark-theme {
+            --bg: #121212;
+            --white: #1e1e1e;
+            --text: #e0e0e0;
+            --gray: #a0a0a0;
+            color: #e0e0e0;
+        }
+        body.dark-theme header {
+            background: #1e1e1e;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        body.dark-theme .logo {
+            color: #2979ff;
+        }
+        body.dark-theme .card, 
+        body.dark-theme .status-box, 
+        body.dark-theme .menu-icon, 
+        body.dark-theme .settings-list, 
+        body.dark-theme .plan-card,
+        body.dark-theme .rulebook-box,
+        body.dark-theme .payment-info {
+            background-color: #1e1e1e !important;
+            color: #e0e0e0 !important;
+            border-color: #333 !important;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+        }
+        body.dark-theme .menu-item span {
+            color: #bbb !important;
+        }
+        body.dark-theme .p-item {
+            background: #252525 !important;
+            border-color: #333 !important;
+        }
+        body.dark-theme .p-item p {
+            color: #fff !important;
+        }
+        body.dark-theme .p-item small {
+            color: #aaa !important;
+        }
+        body.dark-theme .input-group input, 
+        body.dark-theme .input-group select, 
+        body.dark-theme .input-group textarea {
+            background: #2d2d2d !important;
+            border-color: #444 !important;
+            color: #fff !important;
+        }
+        body.dark-theme .input-group input:focus, 
+        body.dark-theme .input-group select, 
+        body.dark-theme .input-group textarea:focus {
+            border-color: var(--accent) !important;
+            background: #333 !important;
+        }
+        body.dark-theme .bottom-nav {
+            background: #1e1e1e !important;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.3) !important;
+        }
+        body.dark-theme .nav-link {
+            color: #777;
+        }
+        body.dark-theme .nav-link.active {
+            color: var(--accent);
+        }
+        body.dark-theme .status-info h4 {
+            color: #fff !important;
+        }
+        body.dark-theme .settings-item {
+            border-color: #2d2d2d !important;
+        }
+        body.dark-theme .settings-item span {
+            color: #e0e0e0 !important;
+        }
+        body.dark-theme #loader {
+            background: rgba(18,18,18,0.95);
+            color: var(--accent);
+        }
+        body.dark-theme .h-item {
+            border-color: #333 !important;
+        }
+        body.dark-theme .h-item h4 {
+            color: #fff !important;
+        }
+        body.dark-theme .user-row {
+            background: #252525 !important;
+            border-color: var(--accent) !important;
+            color: #fff !important;
+        }
+        body.dark-theme .user-row p, 
+        body.dark-theme .user-row span {
+            color: #fff !important;
+        }
+
+        .page {
+            animation: fadeInPage 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+            will-change: opacity, transform;
+        }
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translate3d(0, 12px, 0); }
+            to { opacity: 1; transform: translate3d(0, 0, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader"><i class="fa-solid fa-spinner fa-spin fa-3x" style="margin-bottom:10px;"></i><p>Loading System...</p></div>
+
+    <!-- DYNAMIC RULEBOOK NOTIFICATION MODAL -->
+    <div id="rulebookModal" class="hidden">
+        <div class="rulebook-box">
+            <h3 id="rbTitle"><i class="fa-solid fa-bell"></i> NOTIFICATION</h3>
+            <h4 id="rbSubtitle">Loading...</h4>
+            <div class="rulebook-list" id="rbList">
+                <p>Loading rules...</p>
+            </div>
+            
+            <div id="rbLinkContainer" class="hidden" style="margin-bottom: 20px; background: #f0f2f5; padding: 12px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; border: 1px dashed var(--primary);">
+                <span id="rbLinkText" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 70%; color: var(--secondary); font-weight: bold;">Loading...</span>
+                <button onclick="openRbLink()" style="background: #1565c0; color: white; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; font-weight: bold;"><i class="fa-solid fa-up-right-from-square"></i> Open</button>
+            </div>
+
+            <button class="btn-got-it" onclick="closeRulebook()">Got it!</button>
+        </div>
+    </div>
+
+    <!-- AUTH PAGES -->
+    <div id="loginPage" class="auth-container hidden">
+        <div class="auth-box">
+            <h2>Global invest PLATFORM</h2>
+            <p style="font-size:12px; color:#666; margin-bottom:20px;">Login to your account</p>
+            <div class="input-group"><input type="email" id="logEmail" placeholder="Email Address"></div>
+            <div class="input-group"><input type="password" id="logPass" placeholder="Password"></div>
+            <button class="btn-primary" onclick="loginUser()">LOGIN SECURELY</button>
+            <span class="link-text" onclick="toggleAuth('register')">New User? Create Account Here</span>
+        </div>
+    </div>
+
+    <div id="registerPage" class="auth-container hidden">
+        <div class="auth-box" style="max-height: 90vh; overflow-y: auto;">
+            <h2>CREATE ACCOUNT</h2>
+            <p style="font-size:12px; color:#666; margin-bottom:20px;">WELCOME TO Global invest PLATFORM OFFICIAL!</p>
+            <div class="input-group"><input type="text" id="regName" placeholder="First Name"></div>
+            <div class="input-group"><input type="email" id="regEmail" placeholder="Email Address"></div>
+            <div class="input-group"><input type="password" id="regPass" placeholder="Password"></div>
+            <div class="input-group"><input type="password" id="regCPass" placeholder="Confirm Password"></div>
+            
+            <div class="input-group"><input type="text" id="regInvite" placeholder="Invite Code"></div>
+            <button class="btn-primary" onclick="registerUser()">REGISTER NOW</button>
+            <span class="link-text" onclick="toggleAuth('login')">Already have account? Login</span>
+        </div>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="app-layout" class="hidden">
+        
+        <header>
+            <div class="logo">Global invest <span id="rainbowTimer" class="hidden" style="margin-left: 8px; font-size: 11px; border: 2px solid #ff1744; color: #ff1744; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; vertical-align: middle; transition: none; line-height: 1;">30</span></div>
+            <div>
+                <i id="themeToggle" class="fa-solid fa-moon" style="color:var(--gray); font-size: 20px; margin-right: 15px; cursor: pointer;" onclick="toggleTheme()"></i>
+                <i class="fa-solid fa-headset" style="color:var(--primary); font-size: 20px; margin-right: 15px; cursor: pointer;" onclick="showPage('supportPage')"></i>
+                <i id="rainbowToggle" class="fa-solid fa-wand-magic-sparkles" style="color:var(--gray); font-size: 20px; margin-right: 15px; cursor: pointer;" onclick="toggleRainbowTheme()"></i>
+                
+                <span style="position: relative; display: inline-block;">
+                    <i class="fa-solid fa-bell" style="color:var(--primary); font-size: 20px; cursor: pointer;" onclick="openRulebookManual()"></i>
+                    <span class="glow-update-badge hidden" id="bellUpdateBadge" style="top: -6px; right: -6px; font-size: 6px; padding: 1px 3px;">ADVANCE</span>
+                </span>
+            </div>
+        </header>
+
+        <!-- DASHBOARD -->
+        <div id="dashPage" class="page">
+            <div class="dash-card">
+                <p style="font-size: 12px; opacity: 0.8;">Wallet Balance</p>
+                <h2 style="font-size: 36px; font-weight: 700;">Rs <span id="userBal">0.00</span></h2>
+                <p id="planExpiryText" style="font-size:10px; margin-top:5px; color:#fff; font-weight:bold;"></p>
+                <div class="dash-btns">
+                    <button class="btn-action btn-depo" onclick="showPage('plansPage')">Deposit Plan</button>
+                    <button class="btn-action btn-with" onclick="showPage('withdrawPage')">Withdraw</button>
+                </div>
+            </div>
+
+            <div class="status-grid">
+                <div class="status-box"><i class="fa-solid fa-chart-pie"></i><div class="status-info"><p>Total Invest</p><h4 id="s_inv">Rs 0</h4></div></div>
+                <div class="status-box"><i class="fa-solid fa-wallet"></i><div class="status-info"><p>Total With</p><h4 id="s_with">Rs 0</h4></div></div>
+                <div class="status-box"><i class="fa-solid fa-spinner" style="color:var(--warning)"></i><div class="status-info"><p>Pending Dep</p><h4 id="s_pdep">Rs 0</h4></div></div>
+                <div class="status-box"><i class="fa-solid fa-clock"></i><div class="status-info"><p>Pending With</p><h4 id="s_pwith">Rs 0</h4></div></div>
+                <div class="status-box"><i class="fa-solid fa-gift"></i><div class="status-info"><p>Bonus</p><h4 id="s_bonus">Rs 10</h4></div></div>
+                <div class="status-box"><i class="fa-solid fa-users"></i><div class="status-info"><p>Active Team</p><h4 id="s_team">0</h4></div></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" onclick="openAgentWhatsapp()">
+                    <div class="menu-icon" style="color:#25d366; background:#e8f5e9;"><i class="fa-brands fa-whatsapp"></i></div>
+                    <span style="font-weight: 700; color: #2e7d32;">Agent Support</span>
+                </div>
+
+                <div class="menu-item" onclick="showPage('supportPage')">
+                    <div class="menu-icon" style="color:var(--accent);"><i class="fa-solid fa-headset"></i></div>
+                    <span>Support</span>
+                </div>
+                
+                <div class="menu-item" onclick="showPage('timerPage')">
+                    <div class="menu-icon" style="color:#ffb300; background:#fff8e1;">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <span class="glow-update-badge hidden" id="timerUpdateBadge">24H</span>
+                    </div>
+                    <span>Timer </span>
+                </div>
+                
+                <div class="menu-item" onclick="showPage('promoPage')">
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-ticket"></i>
+                        <span class="glow-update-badge hidden" id="promoUpdateBadge">ADVANCE</span>
+                    </div>
+                    <span>Promo</span>
+                </div>
+                
+                <div class="menu-item" onclick="showPage('historyPage')"><div class="menu-icon"><i class="fa-solid fa-receipt"></i></div><span>History</span></div>
+                
+                <div class="menu-item" onclick="showPage('teamPage')"><div class="menu-icon"><i class="fa-solid fa-users-viewfinder"></i></div><span>Team</span></div>
+                
+                <div class="menu-item" onclick="showPage('networkPage')">
+                    <div class="menu-icon" style="color:#9c27b0; background:#f3e5f5;">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span class="glow-update-badge hidden" id="networkUpdateBadge">NEW</span>
+                    </div>
+                    <span>Network</span>
+                </div>
+
+                <div class="menu-item" onclick="clickInviteEarn(this)">
+                    <div class="menu-icon" style="color:#e91e63;">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span class="glow-update-badge hidden" id="salaryUpdateBadge">ADVANCE</span>
+                    </div>
+                    <span id="inviteEarnMenuText">Salary</span>
+                </div>
+                
+                <div class="menu-item" onclick="showPage('profilePage')"><div class="menu-icon"><i class="fa-solid fa-gear"></i></div><span>Setting</span></div>
+                
+                <div class="menu-item" onclick="showPage('aboutPage')">
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="glow-update-badge hidden" id="aboutUpdateBadge">ADVANCE</span>
+                    </div>
+                    <span>About</span>
+                </div>
+                
+                <div class="menu-item" onclick="openSocial('whatsapp')"><div class="menu-icon" style="color:#25d366;"><i class="fa-brands fa-whatsapp"></i></div><span>WhatsApp</span></div>
+                <div class="menu-item" onclick="openSocial('telegram')"><div class="menu-icon" style="color:#24A1DE;"><i class="fa-brands fa-telegram"></i></div><span>Telegram</span></div>
+            </div>
+        </div>
+
+        <!-- NEW NETWORK BONUS PAGE (3-LEVEL COMMISSION SYSTEM) -->
+        <div id="networkPage" class="page hidden">
+            <div class="section-title">3-Level Network Bonus</div>
+            <div class="card" style="text-align:center;">
+                <h3 style="color:var(--primary); margin-bottom:15px;"><i class="fa-solid fa-sitemap"></i> Multi-Level Earnings</h3>
+                
+                <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+                    <div style="background:#e3f2fd; padding:15px; border-radius:15px; width:30%; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <p style="font-size:11px; font-weight:bold; color:var(--primary);">Level 1</p>
+                        <h2 style="color:var(--secondary); font-size:24px; font-weight:800;" id="net_l1_comm">6%</h2>
+                        <p style="font-size:10px; color:#555;">Direct Invites</p>
+                    </div>
+                    <div style="background:#f3e5f5; padding:15px; border-radius:15px; width:30%; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <p style="font-size:11px; font-weight:bold; color:#7b1fa2;">Level 2</p>
+                        <h2 style="color:#9c27b0; font-size:24px; font-weight:800;" id="net_l2_comm">3%</h2>
+                        <p style="font-size:10px; color:#555;">Sub Invites</p>
+                    </div>
+                    <div style="background:#e8f5e9; padding:15px; border-radius:15px; width:30%; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <p style="font-size:11px; font-weight:bold; color:#2e7d32;">Level 3</p>
+                        <h2 style="color:#4caf50; font-size:24px; font-weight:800;" id="net_l3_comm">1%</h2>
+                        <p style="font-size:10px; color:#555;">Deep Invites</p>
+                    </div>
+                </div>
+
+                <div style="text-align:left; background:#fff3e0; border: 1.5px dashed #ffb300; padding:15px; border-radius:15px; font-size:12px; color:#333; line-height:1.6;">
+                    <h4 style="color:#e65100; margin-bottom:10px; font-size:14px;"><i class="fa-solid fa-circle-info"></i> How does it work?</h4>
+                    <p style="margin-bottom:10px;"><b> Direct:</b> When someone registers using your invite link and activates a package, you instantly get a <b style="color:var(--primary); font-size:14px;"><span id="desc_l1">6%</span></b> commission added to your wallet.</p>
+                    <p style="margin-bottom:10px;"><b>Indirect:</b> If your direct invite (Level 1) invites someone else, and they activate a package, your Level 1 gets <span id="desc_l1_sub">6%</span>, and YOU get a <b style="color:#9c27b0; font-size:14px;"><span id="desc_l2">3%</span></b> bonus commission automatically!</p>
+                    <p style="margin-bottom:10px;"><b>Deep:</b> If your Level 2 invites a new member who activates a plan, YOU still earn a <b style="color:#2e7d32; font-size:14px;"><span id="desc_l3">1%</span></b> deep referral commission. This means your earnings scale automatically with your network depth!</p>
+                    <p style="margin-top:12px; padding-top:10px; border-top: 1px solid #ffd54f; font-weight:bold; color:var(--primary); text-align:center;">All commissions are credited directly to your wallet automatically upon package activation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW TIMER TOOL PAGE -->
+        <div id="timerPage" class="page hidden">
+            <div class="section-title">Automated Earning with Timer </div>
+            <div class="card">
+                <div style="background:#e3f2fd; border: 1.5px solid #90caf9; padding:15px; border-radius:15px; margin-bottom:20px; text-align:center;">
+                    <h3 style="color:var(--primary); margin-bottom:5px;"><i class="fa-solid fa-clock-rotate-left"></i> 24-Hour Profit Engine</h3>
+                    <p style="font-size:12px; color:#333; line-height: 1.5;">Profits are automatically added to your wallet every 24 hours based on your active VIP packages. New users receive their first-day dividend immediately upon package activation!</p>
+                    <div style="margin-top: 15px; font-weight: bold; font-size: 14px; color: #1565c0;">
+                        Reset Time: <span id="nextPayoutCountdown" style="font-family: monospace; background: #fff; padding: 4px 8px; border-radius: 6px; border: 1px solid #90caf9;">Calculating...</span>
+                    </div>
+                    <div style="margin-top: 8px; font-size: 11px; color: #555;">
+                        Scheduled Daily Distribution Drop: <b id="distTimeLabel">5:00 AM Sharp</b>
+                    </div>
+                </div>
+
+                <!-- 5 Custom Parameter Cards -->
+                <div style="background:#f8f9fa; border:1px solid #e0e0e0; padding:12px; border-radius:12px; margin-bottom:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                        <span style="font-size:11px; font-weight:700; color:var(--primary);">1. Timer ID </span>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick="toggleMask('timerIdVal', this)" style="background:#757575; color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">Hide</button>
+                            <button onclick="copyToClipboard('timerIdVal')" style="background:var(--secondary); color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;"><i class="fa-solid fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div style="font-family:monospace; font-size:13px; font-weight:bold; color:#222; background:#fff; padding:8px; border-radius:6px; border:1px dashed #ccc; word-break:break-all;" id="timerIdVal">Loading...</div>
+                </div>
+
+                <div style="background:#f8f9fa; border:1px solid #e0e0e0; padding:12px; border-radius:12px; margin-bottom:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                        <span style="font-size:11px; font-weight:700; color:var(--primary);">2. Round ID</span>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick="toggleMask('roundIdVal', this)" style="background:#757575; color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">Hide</button>
+                            <button onclick="copyToClipboard('roundIdVal')" style="background:var(--secondary); color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;"><i class="fa-solid fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div style="font-family:monospace; font-size:13px; font-weight:bold; color:#222; background:#fff; padding:8px; border-radius:6px; border:1px dashed #ccc; word-break:break-all;" id="roundIdVal">Loading...</div>
+                </div>
+
+                <div style="background:#f8f9fa; border:1px solid #e0e0e0; padding:12px; border-radius:12px; margin-bottom:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                        <span style="font-size:11px; font-weight:700; color:var(--primary);">3. Plan ID</span>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick="toggleMask('planIdVal', this)" style="background:#757575; color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">Hide</button>
+                            <button onclick="copyToClipboard('planIdVal')" style="background:var(--secondary); color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;"><i class="fa-solid fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div style="font-family:monospace; font-size:13px; font-weight:bold; color:#222; background:#fff; padding:8px; border-radius:6px; border:1px dashed #ccc; word-break:break-all;" id="planIdVal">Loading...</div>
+                </div>
+
+                <div style="background:#f8f9fa; border:1px solid #e0e0e0; padding:12px; border-radius:12px; margin-bottom:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                        <span style="font-size:11px; font-weight:700; color:var(--primary);">4. Income ID</span>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick="toggleMask('incomeIdVal', this)" style="background:#757575; color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">Hide</button>
+                            <button onclick="copyToClipboard('incomeIdVal')" style="background:var(--secondary); color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;"><i class="fa-solid fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div style="font-family:monospace; font-size:13px; font-weight:bold; color:#222; background:#fff; padding:8px; border-radius:6px; border:1px dashed #ccc; word-break:break-all;" id="incomeIdVal">Loading...</div>
+                </div>
+
+                <div style="background:#f8f9fa; border:1px solid #e0e0e0; padding:12px; border-radius:12px; margin-bottom:12px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+                        <span style="font-size:11px; font-weight:700; color:var(--primary);">5. Bot ID</span>
+                        <div style="display:flex; gap:5px;">
+                            <button onclick="toggleMask('botIdVal', this)" style="background:#757575; color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;">Hide</button>
+                            <button onclick="copyToClipboard('botIdVal')" style="background:var(--secondary); color:white; border:none; padding:3px 8px; border-radius:4px; font-size:10px; cursor:pointer;"><i class="fa-solid fa-copy"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div style="font-family:monospace; font-size:13px; font-weight:bold; color:#222; background:#fff; padding:8px; border-radius:6px; border:1px dashed #ccc; word-break:break-all;" id="botIdVal">Loading...</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- WITHDRAW -->
+        <div id="withdrawPage" class="page hidden">
+            <div class="section-title">Withdraw Fund</div>
+            <div class="card">
+                <div class="payment-info" style="background:#e3f2fd; border-color:var(--primary); margin-bottom:20px; padding:15px; border-radius:15px; text-align:center;">
+                    <p style="font-size:12px;">Available Balance</p>
+                    <h3 style="color:var(--primary);">Rs <span id="w_balShow">0</span></h3>
+                    <p style="font-size:10px; color:#555; margin-top:5px;">Min Withdraw: Rs <span id="w_minLimitText">50</span> | Max: Rs 50,000</p>
+                </div>
+                <div class="input-group">
+                    <label>Select Bank</label>
+                    <select id="withMethod"><option value="Easypaisa">Easypaisa</option><option value="JazzCash">JazzCash</option></select>
+                </div>
+                <div class="input-group"><label>Account name</label><input type="text" id="withName" placeholder="NAME"></div>
+                <div class="input-group"><label>Account Number</label><input type="number" id="withNum" placeholder="03XXXXXXXXX"></div>
+                <div class="input-group"><label>Withdraw Amount</label><input type="number" id="withAmount" placeholder="Enter Amount"></div>
+                <button class="btn-primary" onclick="submitWithdraw()">SUBMIT WITHDRAWAL</button>
+            </div>
+        </div>
+
+        <!-- PROFILE SETTINGS -->
+        <div id="profilePage" class="page hidden">
+            <div style="background:var(--primary); padding:40px 20px; text-align:center; color:white; border-radius:0 0 30px 30px;">
+                <div id="dpContainer" style="width:80px; height:80px; background:var(--white); border-radius:50%; margin: 0 auto 10px; display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:35px; cursor:pointer; position:relative; overflow:hidden;" onclick="triggerDpUpload()">
+                    <img id="userDpImg" class="hidden" style="width:100%; height:100%; object-fit:cover;">
+                    <i id="userDpIcon" class="fa-solid fa-user"></i>
+                    <input type="file" id="dpInput" class="hidden" accept="image/*" onchange="uploadDp(event)">
+                </div>
+                <h3 id="profNameTitle" style="margin-bottom:5px;">Loading...</h3>
+                <span id="profInviteCode" style="font-size:12px; display:block; margin-bottom:5px; color:#ddd;">Code: ----</span>
+                <span id="profEmail" style="font-size:12px; display:block; margin-bottom:10px; color:#ddd;">Email: ----</span>
+                <span id="verifiedBadge" class="hidden" style="background:#00c853; color:white; font-size:10px; font-weight:800; padding:4px 12px; border-radius:10px; display:inline-block;"><i class="fa-solid fa-check-circle"></i> VERIFIED ACCOUNT</span>
+            </div>
+            <div style="padding: 15px;">
+                <div class="settings-list">
+                    <div class="settings-item" onclick="showPage('editProfilePage')">
+                        <span><i class="fa-solid fa-user-check left-icon"></i> Update Profile</span><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                    </div>
+                    <div class="settings-item" onclick="showPage('securityPage')">
+                        <span><i class="fa-solid fa-shield-halved left-icon"></i> Account Security</span><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                    </div>
+                    <div class="settings-item" onclick="showPage('historyPage')">
+                        <span><i class="fa-solid fa-receipt left-icon"></i> Transaction History</span><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                    </div>
+                    <div class="settings-item" onclick="showPage('policyPage')">
+                        <span><i class="fa-solid fa-file-contract left-icon"></i> Privacy Policy</span><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                    </div>
+                    <div class="settings-item" onclick="manualUpdateApp()" style="color:var(--primary);">
+                        <span><i class="fa-solid fa-rotate left-icon" style="color:var(--primary);"></i> Update Now</span><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                    </div>
+                    <div class="settings-item" onclick="logoutUser()" style="color:red;">
+                        <span><i class="fa-solid fa-power-off left-icon" style="color:red;"></i> Logout Account</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACCOUNT SECURITY PAGE -->
+        <div id="securityPage" class="page hidden">
+            <div class="section-title">Account Security</div>
+            <div class="card">
+                <div class="input-group"><label>Current Password</label><input type="password" id="oldPass" placeholder="******"></div>
+                <div class="input-group"><label>New Password</label><input type="password" id="newPass" placeholder="Minimum 6 chars"></div>
+                <div class="input-group"><label>Confirm New Password</label><input type="password" id="newCPass" placeholder="******"></div>
+                <button class="btn-primary" onclick="changeUserPassword()">CHANGE PASSWORD</button>
+            </div>
+        </div>
+
+        <!-- BIND PROFILE -->
+        <div id="editProfilePage" class="page hidden">
+            <div class="section-title">Bind Account Info</div>
+            <div class="card">
+                <p style="font-size:11px; color:red; margin-bottom:15px;">Note: Phone number can only be bound once for verification. Please double check.</p>
+                <div class="input-group"><label>Full Name</label><input type="text" id="updName" placeholder="Your Name"></div>
+                <div class="input-group"><label>Mobile Number</label><input type="number" id="updPhone" placeholder="03XXXXXXXXX"></div>
+                
+                <div class="input-group"><label>Email Address</label><input type="email" id="updEmail" disabled style="opacity: 0.85;"></div>
+                <div class="input-group"><label>Current Password</label><input type="text" id="updPassword" disabled style="opacity: 0.85;"></div>
+                <div class="input-group"><label>Invite Code</label><input type="text" id="updInviteCode" disabled style="opacity: 0.85;"></div>
+                
+                <button class="btn-primary" onclick="saveProfileInfo()">VERIFY</button>
+            </div>
+        </div>
+
+        <!-- ABOUT & POLICY -->
+        <div id="aboutPage" class="page hidden">
+            <div class="section-title">About Platform</div>
+            <div class="card" style="text-align:justify; max-height: 70vh; overflow-y: auto; font-size: 13px; line-height: 1.6; color: #333;">
+                <h2 style="color:var(--primary); margin-bottom:15px; text-align:center;">Global invest PLATFORM v5.4.0</h2>
+                <div id="aboutContentLines"></div>
+            </div>
+        </div>
+
+        <div id="policyPage" class="page hidden">
+            <div class="section-title">Privacy Policy</div>
+            <div class="card" style="font-size: 12px; color: #444; line-height: 1.8;">
+                <h4 style="color:var(--primary); margin-bottom: 10px; font-size:14px; text-align:center;">Platform Terms & Conditions</h4>
+                <ol style="margin-left: 15px; margin-bottom: 15px;">
+                    <li style="margin-bottom: 8px;"><b>Account Registration:</b> Users are responsible for maintaining the security and privacy of their registered accounts.</li>
+                    <li style="margin-bottom: 8px;"><b>Automated Timer Dividends:</b> Daily returns are calculated and credited automatically every 24 hours based on active packages.</li>
+                    <li style="margin-bottom: 8px;"><b>Mobile Verification Binds:</b> Phone numbers must be verified and bound to the profile page to enable withdraw features.</li>
+                    <li style="margin-bottom: 8px;"><b>Anti-Bot Mechanism:</b> The platform utilizes persistent background automated engine monitoring to execute daily monetization tasks seamlessly.</li>
+                    <li style="margin-bottom: 8px;"><b>Deposit Approvals:</b> Deposits must be backed by accurate payment proof (Trx ID & exact receipt details) to successfully activate any VIP package.</li>
+                    <li style="margin-bottom: 8px;"><b>Third-Party Payments:</b> Sending funds from or receiving withdrawals to third-party bank accounts not belonging to the registered user is prohibited.</li>
+                    <li style="margin-bottom: 8px;"><b>Withdrawal Limits:</b> Withdrawal requests are bound by local limits (minimum Rs. 50, maximum Rs. 50,000 per transaction).</li>
+                    <li style="margin-bottom: 8px;"><b>Active Referral Rule:</b> To sustain the community economy, users must satisfy the minimum active team invite condition before making withdrawals.</li>
+                    <li style="margin-bottom: 8px;"><b>Package Integrity:</b> Once an investment VIP package is approved, it remains active for exactly 55 calendar days and cannot be refunded.</li>
+                    <li style="margin-bottom: 8px;"><b>Legal Declaration:</b> By accessing this platform, users legally agree to operate within these codified rules.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- TEAM PAGE -->
+        <div id="teamPage" class="page hidden">
+            <div class="section-title">My Team Details</div>
+            <div class="card" style="text-align:center;">
+                <p style="font-size:12px; margin-bottom:10px; color:#555;"><span id="clientCommLabel">get 6% Level 1 commission!</span></p>
+                <div style="display:flex; align-items: center; gap:10px; margin-bottom: 20px;">
+                    <input type="text" id="inviteLinkBox" readonly style="flex:1; padding:12px; border-radius:10px; border:1px solid #ddd; font-size:10px; font-weight:bold; background:#f5f5f5;">
+                    <button style="background:var(--secondary); color:white; border:none; padding:12px 18px; border-radius:10px; font-size:14px; cursor:pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="copyInviteLink()"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <h3 style="color:var(--primary); margin-bottom:25px;">Active Members: <span id="t_activeCount">0</span></h3>
+                <h4 style="text-align:left; font-size:15px; color:var(--text); margin-bottom:10px; border-bottom:1px solid #eee; padding-bottom:8px;"><i class="fa-solid fa-users"></i> Invite History</h4>
+                <div id="listTeam" style="text-align:left;">
+                    <p style="font-size:12px; text-align:center; color:#888;">No team members found</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SALARY STATUS PAGE -->
+        <div id="inviteEarnPage" class="page hidden">
+            <div class="section-title">Salary Status</div>
+            <div class="card" style="text-align: center;">
+                <div id="salaryTimerContainer" style="background: #fff3e0; border: 1.5px dashed #e65100; padding:12px; border-radius:15px; margin-bottom: 20px; text-align: center; font-weight: bold; font-size: 13px; color: #e65100;">
+                    <i class="fa-solid fa-clock"></i> <span id="salaryCountdownTimer">Calculating payout countdown...</span>
+                </div>
+
+                <p style="font-size:13px; margin-bottom:15px; font-weight: 500; color: var(--text);">Complete invite milestones members must activate a VIP package to count to unlock your salary!</p>
+                <div style="background: #e3f2fd; padding:15px; border-radius:15px; margin-bottom: 20px;">
+                    <p style="font-size: 11px; color: var(--gray); text-transform: uppercase; font-weight: bold;">Valid Active Invites With Plan</p>
+                    <h2 style="color: var(--primary); font-size: 32px; font-weight: 800;" id="ie_activeInvites">0</h2>
+                    <p style="font-size: 12px; margin-top:5px; color:#555; font-weight: bold;" id="ie_salaryStatus">Salary Status: Locked</p>
+                </div>
+                
+                <h4 style="text-align: left; margin-bottom: 12px; color: var(--text); font-weight: 700; border-bottom: 1px solid #eee; padding-bottom: 8px;"><i class="fa-solid fa-gift"></i> Salary Mission</h4>
+                <div id="milestonesList" style="text-align: left;"></div>
+            </div>
+        </div>
+
+        <!-- PLANS & DEPOSIT -->
+        <div id="plansPage" class="page hidden">
+            <div class="section-title">Investment Packages</div>
+            <div style="background: #e3f2fd; color: #0d47a1; border: 1.5px solid #90caf9; padding: 15px; margin: 15px; border-radius: 15px; text-align: center; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(13,71,161,0.05);">
+                <i class="fa-solid fa-circle-exclamation"></i> Double plan sa double earning ho gi!
+            </div>
+            <div id="plansCont"></div>
+        </div>
+        
+        <div id="depositFormPage" class="page hidden">
+            <div class="section-title">Complete Payment</div>
+            <div class="card">
+                <p style="font-size:12px; color:var(--gray); text-align:center; margin-bottom:10px;">Please send exact amount to the following account to activate <b id="d_planName">VIP X</b></p>
+                
+                <div class="input-group">
+                    <label>Select Deposit Method</label>
+                    <select id="depMethod" onchange="toggleDepMethodUI(this.value)">
+                        <option value="Easypaisa">Easypaisa</option>
+                        <option value="JazzCash">JazzCash</option>
+                    </select>
+                </div>
+
+                <div class="payment-info" style="background: #fff3e0; border: 1px dashed var(--warning); padding: 15px; border-radius: 15px; margin-bottom: 20px; text-align: center;">
+                    <p style="font-size:12px; font-weight:700; color:#333;">SEND AMOUNT: <span style="color:var(--primary)">Rs <span id="d_amount">0</span></span></p>
+                    <p style="font-size:12px; margin-top:10px;" id="clientPayMethod">EASYPAISA ACCOUNT NUMBER</p>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 5px 0; max-width: 100%;">
+                        <h3 id="adminAccountNumber" style="color: #e65100; margin: 0; word-break: break-all; text-align: left;">03001234567</h3>
+                        <button onclick="copyAdminNumber()" style="background: #1565c0; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: bold; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><i class="fa-solid fa-copy"></i> Copy</button>
+                    </div>
+                    <p style="font-size:14px; font-weight:700;" id="clientPayName">Account Name: M Aslam</p>
+                </div>
+                <div class="input-group"><label>Sender Account Name</label><input type="text" id="depSenderName" placeholder="Ali Raza"></div>
+                <div class="input-group"><label>Sender Account Number</label><input type="number" id="depSenderNum" placeholder="03XXXXXXXXX"></div>
+                <div class="input-group"><label>Payment Trx ID / UID</label><input type="text" id="depTrxId" placeholder="TrxID"></div>
+                <button class="btn-primary" onclick="submitDepositProof()">SUBMIT FOR APPROVAL</button>
+            </div>
+        </div>
+
+        <!-- PROMO -->
+        <div id="promoPage" class="page hidden">
+            <div class="section-title">Redeem Promo Code</div>
+            <div class="card">
+                <div class="input-group"><input type="text" id="promoInput" placeholder="Enter Promo Code..." style="text-transform:uppercase; text-align:center; font-weight:bold; letter-spacing:2px;"></div>
+                <button class="btn-primary" onclick="claimPromo()">CLAIM REWARD</button>
+            </div>
+        </div>
+
+        <div id="historyPage" class="page hidden">
+            <div class="section-title">Transaction History</div>
+            <div class="card">
+                <h4 style="color:var(--primary); font-size:15px; margin-bottom:10px;"><i class="fa-solid fa-arrow-down" style="color:var(--success);"></i> Deposits</h4>
+                <div id="listDeposits"><p style="font-size:12px; text-align:center; color:#888;">No deposit history found</p></div>
+                <h4 style="color:var(--primary); font-size:15px; margin-top:20px; margin-bottom:10px;"><i class="fa-solid fa-arrow-up" style="color:red;"></i> Withdrawals</h4>
+                <div id="listWithdraws"><p style="font-size:12px; text-align:center; color:#888;">No withdrawal history found</p></div>
+            </div>
+        </div>
+
+        <!-- SUPPORT PAGE -->
+        <div id="supportPage" class="page hidden">
+            <div class="section-title">Support & Help Desk</div>
+            <div class="card">
+                <div class="input-group">
+                    <label>Select Issue Category</label>
+                    <select id="supCategory">
+                        <option value="Withdraw issue">Withdraw issue</option>
+                        <option value="Deposit issue">Deposit issue</option>
+                        <option value="Timer / Payout issue">Timer / Payout issue</option>
+                        <option value="Other / Write issue">Other issue</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Describe your Issue</label>
+                    <textarea id="supMessage" rows="5" placeholder="Write or paste your support issue details here..."></textarea>
+                </div>
+                <button class="btn-primary" onclick="submitSupportTicket()">SUBMIT SUPPORT</button>
+            </div>
+            
+            <div class="section-title" style="margin-top: 10px;">Your Support history</div>
+            <div class="card" id="userTicketsList">
+                <p style="font-size:12px; text-align:center; color:#888;">No support requests submitted yet.</p>
+            </div>
+        </div>
+
+        <!-- COMPANY DASHBOARD -->
+        <div id="adminPage" class="page hidden" style="background:#222; min-height:100vh; padding-bottom:50px;">
+            <div style="background:#111; padding:20px; text-align:center; color:white; border-bottom:1px solid #333;">
+                <h2><i class="fa-solid fa-user-secret" style="color:#e53935;"></i> company dashboard</h2>
+                <button onclick="showPage('dashPage')" style="margin-top:10px; padding:6px 18px; background:white; color:black; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Exit</button>
+            </div>
+
+            <div class="admin-nav">
+                <div class="admin-nav-item active" onclick="switchAdminTab('adm-dash', this)">Dashboard</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-depo', this)">Deposits</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-with', this)">Withdraws</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-user', this)">Users</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-plans', this)">Plans</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-support', this)">Tickets</div>
+                <div class="admin-nav-item" onclick="switchAdminTab('adm-set', this)">Settings</div>
+            </div>
+
+            <div id="adm-dash" class="admin-tab-content active" style="padding:15px;">
+                <div class="stat-box"><h4>Total Users</h4><h2 id="st_users">0</h2></div>
+                <div class="stat-box"><h4>Total Member Balances</h4><h2 id="st_bal">Rs 0</h2></div>
+                <div class="stat-box"><h4>Total Investments</h4><h2 id="st_inv">Rs 0</h2></div>
+                <div class="stat-box"><h4>Pending Withdrawals</h4><h2 id="st_pwith" style="color:#ffb300;">Rs 0</h2></div>
+            </div>
+
+            <div id="adm-depo" class="admin-tab-content" style="padding:10px;">
+                <h3 style="margin:10px 0; color:#00c853;"><i class="fa-solid fa-money-bill-transfer"></i> Pending Deposits</h3>
+                <div id="adminPendingDeposits" style="font-size:12px;">Loading...</div>
+            </div>
+
+            <div id="adm-with" class="admin-tab-content" style="padding:10px;">
+                <h3 style="margin:10px 0; color:#e53935;"><i class="fa-solid fa-building-columns"></i> Pending Withdrawals</h3>
+                <div id="adminPendingWithdraws" style="font-size:12px;">Loading...</div>
+            </div>
+
+            <div id="adm-user" class="admin-tab-content" style="padding:10px;">
+                <h3 style="margin:10px 0; color:white;">User Management (Grouped by IP)</h3>
+                <div id="adminUserList" style="font-size:12px;">Loading Users...</div>
+            </div>
+
+            <div id="adm-plans" class="admin-tab-content" style="padding:10px;">
+                <h3 style="margin:10px 0; color:white;"><i class="fa-solid fa-layer-group"></i> Manage Investment Packages</h3>
+                <div id="adminPlansList" style="font-size:12px;">Loading plans...</div>
+            </div>
+
+            <div id="adm-support" class="admin-tab-content" style="padding:10px;">
+                <h3 style="margin:10px 0; color:white;"><i class="fa-solid fa-headset"></i> Support Tickets Requests</h3>
+                <div id="adminTicketsList" style="font-size:12px;">Loading support tickets...</div>
+            </div>
+            
+            <div id="adm-set" class="admin-tab-content" style="padding:10px;">
+                <!-- Persistent Anti-Bot Engine Card -->
+                <div class="admin-card" style="border: 2px solid #00e676; background: #1a1a1a; color: #fff;">
+                    <h3 style="margin-bottom:10px; color:#58e596;"><i class="fa-solid fa-robot"></i> Permanent Anti-Bot & 24H Auto Timer Engine (24/7 Active)</h3>
+                    <p style="font-size:11px; margin-bottom:15px; color:#ccc;">Yeh engine 24/7 background mein active reh kar har 24 ghantay baad automatically users ke accounts mein unke daily package profits credit kar deta hai.</p>
+                    
+                    <div style="display:flex; gap:10px; align-items:center; margin-bottom:15px;">
+                        <span id="autoBotStatusIndicator" style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#00c853; box-shadow:0 0 8px #00c853;"></span>
+                        <span id="autoBotStatusText" style="font-size:13px; font-weight:bold; color:#00c853;">Status: 24/7 RUNNING AUTOMATICALLY</span>
+                    </div>
+
+                    <div style="display:flex; gap:10px;">
+                        <button class="btn-primary" style="background:#00c853; flex:1;" onclick="togglePermanentAntiBot(true)"><i class="fa-solid fa-play"></i> Force Sync Engine</button>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--accent);"><i class="fa-solid fa-clock"></i> Daily Profit Distribution Time</h3>
+                    <p style="font-size:11px; margin-bottom:10px; color:#666;">Set the exact time when daily package profits should automatically drop into user accounts.</p>
+                    <div class="input-group">
+                        <label>Set Time (24-Hour Format)</label>
+                        <input type="time" id="admDistTime" value="05:00">
+                    </div>
+                    <button class="btn-primary" onclick="saveDistributionTime()">Update Timer Setup</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--accent);"><i class="fa-solid fa-gift"></i> Salary Mission & Frequency Settings</h3>
+                    <div class="input-group">
+                        <label>Salary Frequency</label>
+                        <select id="admSalaryType">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-height: 250px; overflow-y: auto; padding-right: 5px; border: 1px solid #eee; padding: 10px; border-radius: 8px; background: #fafafa;">
+                        <div class="input-group"><label>Starter (T1) Invites</label><input type="number" id="admT1Inv" placeholder="10"></div>
+                        <div class="input-group"><label>Starter Salary (Rs)</label><input type="number" id="admT1Amt" placeholder="200"></div>
+                        <div class="input-group"><label>Bronze (T2) Invites</label><input type="number" id="admT2Inv" placeholder="25"></div>
+                        <div class="input-group"><label>Bronze Salary (Rs)</label><input type="number" id="admT2Amt" placeholder="500"></div>
+                        <div class="input-group"><label>Silver (T3) Invites</label><input type="number" id="admT3Inv" placeholder="50"></div>
+                        <div class="input-group"><label>Silver Salary (Rs)</label><input type="number" id="admT3Amt" placeholder="820"></div>
+                        <div class="input-group"><label>Gold (T4) Invites</label><input type="number" id="admT4Inv" placeholder="60"></div>
+                        <div class="input-group"><label>Gold Salary (Rs)</label><input type="number" id="admT4Amt" placeholder="1100"></div>
+                        <div class="input-group"><label>Platinum (T5) Invites</label><input type="number" id="admT5Inv" placeholder="100"></div>
+                        <div class="input-group"><label>Platinum Salary (Rs)</label><input type="number" id="admT5Amt" placeholder="1600"></div>
+                        <div class="input-group"><label>Diamond (T6) Invites</label><input type="number" id="admT6Inv" placeholder="125"></div>
+                        <div class="input-group"><label>Diamond Salary (Rs)</label><input type="number" id="admT6Amt" placeholder="2400"></div>
+                        <div class="input-group"><label>Crown (T7) Invites</label><input type="number" id="admT7Inv" placeholder="150"></div>
+                        <div class="input-group"><label>Crown Salary (Rs)</label><input type="number" id="admT7Amt" placeholder="2900"></div>
+                        <div class="input-group"><label>Ambassador (T8) Invites</label><input type="number" id="admT8Inv" placeholder="200"></div>
+                        <div class="input-group"><label>Ambassador Salary (Rs)</label><input type="number" id="admT8Amt" placeholder="3500"></div>
+                        <div class="input-group"><label>Royal (T9) Invites</label><input type="number" id="admT9Inv" placeholder="250"></div>
+                        <div class="input-group"><label>Royal Salary (Rs)</label><input type="number" id="admT9Amt" placeholder="4200"></div>
+                        <div class="input-group"><label>Director (T10) Invites</label><input type="number" id="admT10Inv" placeholder="300"></div>
+                        <div class="input-group"><label>Director Salary (Rs)</label><input type="number" id="admT10Amt" placeholder="4800"></div>
+                    </div>
+                    <button class="btn-primary" style="margin-top:10px;" onclick="saveInviteSettings()">Save Salary Settings</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--success);"><i class="fa-solid fa-gift"></i> Registration Bonus Settings</h3>
+                    <div class="input-group"><label>Registration Bonus (Rs)</label><input type="number" id="admRegBonus" placeholder="10"></div>
+                    <button class="btn-primary" onclick="saveRegBonusSettings()">Save Registration Bonus</button>
+                </div>
+
+                <!-- 🚨 EDIT COMMISSION MULTI-LEVEL SETTINGS HERE 🚨 -->
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--warning);"><i class="fa-solid fa-network-wired"></i> Multi-Level Referral Commission</h3>
+                    <p style="font-size:11px; color:#555; margin-bottom:15px;">Setup how commission is distributed when an invited user successfully buys a VIP package.</p>
+                    <div class="input-group"><label>Level 1 Commission (%) - Direct Invites</label><input type="number" id="admCommL1" placeholder="6"></div>
+                    <div class="input-group"><label>Level 2 Commission (%) - Indirect Invites</label><input type="number" id="admCommL2" placeholder="3"></div>
+                    <div class="input-group"><label>Level 3 Commission (%) - Deep Invites</label><input type="number" id="admCommL3" placeholder="1"></div>
+                    <button class="btn-primary" onclick="saveCommissionSettings()">Save Commission Rates</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--primary);"><i class="fa-solid fa-credit-card"></i> Edit Payment Account</h3>
+                    <h4 style="color:var(--secondary); margin-top:10px; margin-bottom:5px;">Easypaisa Account</h4>
+                    <div class="input-group"><label>Account Category Label</label><input type="text" id="admPayMethod" placeholder="EASYPAISA ACCOUNT NUMBER"></div>
+                    <div class="input-group"><label>Account Number</label><input type="text" id="admPayNumber" placeholder="03001234567"></div>
+                    <div class="input-group"><label>Account Holder Name</label><input type="text" id="admPayName" placeholder="M Aslam"></div>
+                    
+                    <h4 style="color:var(--warning); margin-top:15px; margin-bottom:5px;">JazzCash Account</h4>
+                    <div class="input-group"><label>JazzCash Account Number</label><input type="text" id="admJCNumber" placeholder="03XXXXXXXXX"></div>
+                    <div class="input-group"><label>JazzCash Account Holder Name</label><input type="text" id="admJCName" placeholder="Ali Raza"></div>
+                    <button class="btn-primary" onclick="savePaymentSettings()">Save Payment details</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px; color:var(--primary);"><i class="fa-solid fa-bell"></i> Edit Rulebook notification</h3>
+                    <div class="input-group"><label>Title</label><input type="text" id="admRbTitle" placeholder="NOTIFICATION"></div>
+                    <div class="input-group"><label>Notification Subtitle</label><input type="text" id="admRbSubtitle" placeholder="RULEBOOK FROM OFFICIAL"></div>
+                    <div class="input-group">
+                        <label>Rules</label>
+                        <textarea id="admRbRules" rows="6" placeholder="1. Do not use third party payment.\n2. Invite 5 friends to withdraw.\n3. Daily withdrawal limit 3 times."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Notification Share Link</label>
+                        <input type="text" id="admRbLink" placeholder="https://t.me/yourgroup">
+                    </div>
+                    <button class="btn-primary" onclick="saveRulebookSettings()">Save Rulebook</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px;">Social App Links</h3>
+                    <div class="input-group"><label>WhatsApp Link</label><input type="text" id="admWA" placeholder="https://chat.whatsapp.com/..."></div>
+                    <div class="input-group"><label>Telegram Link</label><input type="text" id="admTG" placeholder="https://t.me/..."></div>
+                    <div class="input-group"><label>Website Link</label><input type="text" id="admWeb" placeholder="https://..."></div>
+                    <div class="input-group"><label>Agent Support WhatsApp Number</label><input type="text" id="admAgentWA" placeholder="923047374445"></div>
+                    
+                    <hr style="margin:15px 0; border:1px solid #eee;">
+                    <h3 style="margin-bottom:10px;">Withdrawal Rules</h3>
+                    <div class="input-group"><label>Withdraw Active Team Condition</label><input type="number" id="admWithCond" placeholder="5"></div>
+                    <div class="input-group"><label>Minimum Withdrawal Limit (Rs)</label><input type="number" id="admMinWith" placeholder="50"></div>
+                    <button class="btn-primary" onclick="saveAdminSettings()">Save App Settings</button>
+                    
+                    <hr style="margin:15px 0; border:1px solid #eee;">
+                    <h3 style="color:#e53935; margin-bottom:10px;"><i class="fa-solid fa-ban"></i> Stop Global Earnings</h3>
+                    <div class="input-group">
+                        <select id="admStopEarn">
+                            <option value="false">Earnings ACTIVE</option>
+                            <option value="true">Earnings STOPPED</option>
+                        </select>
+                    </div>
+                    <div class="input-group"><label>Reason for Stopping</label><input type="text" id="admStopReason" placeholder="System Upgrading..."></div>
+                    <button class="btn-danger" onclick="saveEarningStatus()">Update Earning Status</button>
+                </div>
+
+                <div class="admin-card">
+                    <h3 style="margin-bottom:10px;">Create Promo Code</h3>
+                    <div class="input-group"><label>Code Name</label><input type="text" id="admPromoCode" placeholder="Code Name"></div>
+                    <div class="input-group"><label>Reward Amount (Rs)</label><input type="number" id="admPromoAmt" placeholder="Reward Amount"></div>
+                    <div class="input-group"><label>Expiry Date & Time</label><input type="datetime-local" id="admPromoExpiry"></div>
+                    <button class="btn-primary" onclick="adminCreatePromo()">Generate Promo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <nav class="bottom-nav">
+            <div class="nav-link active" onclick="showPage('dashPage', this)"><i class="fa-solid fa-house"></i><span>Home</span></div>
+            <div class="nav-link" onclick="showPage('plansPage', this)"><i class="fa-solid fa-gem"></i><span>Plans</span></div>
+            <div class="nav-link" onclick="showPage('timerPage', this)"><i class="fa-solid fa-stopwatch"></i><span>Timer</span></div>
+            <div class="nav-link" onclick="showPage('profilePage', this)"><i class="fa-solid fa-user-gear"></i><span>Profile</span></div>
+        </nav>
+    </div>
+
+    <!-- FIREBASE LOGIC -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updatePassword, EmailAuthProvider, reauthenticateWithCredential } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getDatabase, ref, set, get, onValue, update, push } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        // Updated Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCRfMjCHJWBpXeYCVAM1hfkuzwWN6mnvcM",
+            authDomain: "pro-earning-1.firebaseapp.com",
+            databaseURL: "https://pro-earning-1-default-rtdb.firebaseio.com",
+            projectId: "pro-earning-1",
+            storageBucket: "pro-earning-1.firebasestorage.app",
+            messagingSenderId: "791435714626",
+            appId: "1:791435714626:web:7157909a020d3861814ddb"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getDatabase(app);
+
+        let currentUser = null;
+        let userData = {};
+        let globalSettings = {};
+        let selectedPlan = {};
+        let allUsersCache = {}; 
+        let rulebookShown = false; 
+
+        const defaultPlans = [
+            {name: "VIP 1", price: 1200, daily: 45, total: 2475, isPopular: false},
+            {name: "VIP 2", price: 2500, daily: 85, total: 4675, isPopular: false},
+            {name: "VIP 3", price: 7500, daily: 240, total: 13200, isPopular: false},
+            {name: "VIP 4", price: 16000, daily: 440, total: 24200, isPopular: true},
+            {name: "VIP 5", price: 33000, daily: 800, total: 44000, isPopular: false},
+            {name: "VIP 6", price: 65000, daily: 1600, total: 88000, isPopular: false},
+            {name: "VIP 7", price: 95000, daily: 2300, total: 126500, isPopular: false},
+            {name: "VIP 8", price: 120000, daily: 2800, total: 154000, isPopular: false},
+            {name: "VIP 9", price: 160000, daily: 3900, total: 214500, isPopular: false},
+            {name: "VIP 10", price: 190000, daily: 5699, total: 313445, isPopular: false},
+            {name: "VIP 11", price: 250000, daily: 6999, total: 384945, isPopular: false}
+        ];
+        let currentPlans = [];
+
+        const defaultInviteSettings = {
+            t1_inv: 10, t1_amt: 200,
+            t2_inv: 25, t2_amt: 500, 
+            t3_inv: 50, t3_amt: 820,
+            t4_inv: 60, t4_amt: 1100,
+            t5_inv: 100, t5_amt: 1600,
+            t6_inv: 125, t6_amt: 2400,
+            t7_inv: 150, t7_amt: 2900,
+            t8_inv: 200, t8_amt: 3500,
+            t9_inv: 250, t9_amt: 4200,
+            t10_inv: 300, t10_amt: 4800,
+            salary_type: "monthly"
+        };
+
+        const loader = document.getElementById('loader');
+        const appLayout = document.getElementById('app-layout');
+
+        const SECURITY_KEY_22 = "9827401928374615203948";
+
+        function crypt(text, key) {
+            let result = "";
+            text = String(text);
+            for (let i = 0; i < text.length; i++) {
+                let charCode = text.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+                result += String.fromCharCode(charCode);
+            }
+            return btoa(unescape(encodeURIComponent(result)));
+        }
+
+        function decrypt(cipher, key) {
+            try {
+                let text = decodeURIComponent(escape(atob(cipher)));
+                let result = "";
+                for (let i = 0; i < text.length; i++) {
+                    let charCode = text.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+                    result += String.fromCharCode(charCode);
+                }
+                return result;
+            } catch(e) {
+                return cipher;
+            }
+        }
+
+        function secureEncrypt(val) {
+            if (val === undefined || val === null) return val;
+            const str = String(val);
+            return "__ENC__" + crypt(str, SECURITY_KEY_22);
+        }
+
+        function secureDecrypt(val) {
+            if (typeof val !== 'string' || !val.startsWith("__ENC__")) return val;
+            const cipher = val.substring(7);
+            const decrypted = decrypt(cipher, SECURITY_KEY_22);
+            if (decrypted === "true") return true;
+            if (decrypted === "false") return false;
+            if (decrypted !== null && decrypted !== "" && !isNaN(decrypted)) return Number(decrypted);
+            return decrypted;
+        }
+
+        function encryptUserObject(u) {
+            if (!u) return u;
+            const encrypted = { ...u };
+            const sensitiveFields = ['balance', 'password', 'phone', 'email', 'totalInvest', 'pendingDep', 'pendingWith', 'bonus', 'teamActive', 'planDailyProfit', 'totalInvites'];
+            sensitiveFields.forEach(f => {
+                if (u[f] !== undefined && u[f] !== null) {
+                    if (typeof u[f] !== 'string' || !u[f].startsWith("__ENC__")) {
+                        encrypted[f] = secureEncrypt(u[f]);
+                    }
+                }
+            });
+            if (u.activePlans) {
+                const encPlans = {};
+                for (let k in u.activePlans) {
+                    const plan = u.activePlans[k];
+                    encPlans[k] = {
+                        ...plan,
+                        daily: secureEncrypt(plan.daily),
+                        price: secureEncrypt(plan.price)
+                    };
+                }
+                encrypted.activePlans = encPlans;
+            }
+            return encrypted;
+        }
+
+        function decryptUserObject(u) {
+            if (!u) return u;
+            const decrypted = { ...u };
+            for (let f in decrypted) {
+                decrypted[f] = secureDecrypt(decrypted[f]);
+            }
+            if (decrypted.activePlans) {
+                const decPlans = {};
+                for (let k in decrypted.activePlans) {
+                    const plan = decrypted.activePlans[k];
+                    decPlans[k] = {
+                        ...plan,
+                        daily: secureDecrypt(plan.daily),
+                        price: secureDecrypt(plan.price)
+                    };
+                }
+                decrypted.activePlans = decPlans;
+            }
+            return decrypted;
+        }
+
+        async function dbSetUser(uid, data) {
+            const encData = encryptUserObject(data);
+            return set(ref(db, 'users/' + uid), encData);
+        }
+
+        async function dbUpdateUser(uid, updates) {
+            const encUpdates = {};
+            const sensitiveFields = ['balance', 'password', 'phone', 'email', 'totalInvest', 'pendingDep', 'pendingWith', 'bonus', 'teamActive', 'planDailyProfit', 'totalInvites'];
+            for (let k in updates) {
+                if (k === 'activePlans') {
+                    const encPlans = {};
+                    for (let pk in updates[k]) {
+                        const plan = updates[k][pk];
+                        encPlans[pk] = {
+                            ...plan,
+                            daily: secureEncrypt(plan.daily),
+                            price: secureEncrypt(plan.price)
+                        };
+                    }
+                    encUpdates[k] = encPlans;
+                } else if (sensitiveFields.includes(k)) {
+                    encUpdates[k] = secureEncrypt(updates[k]);
+                } else {
+                    encUpdates[k] = updates[k];
+                }
+            }
+            return update(ref(db, 'users/' + uid), encUpdates);
+        }
+
+        // Help format 24h to 12h nicely
+        function formatTime12Hour(time24) {
+            let parts = time24.split(':');
+            let h = parseInt(parts[0], 10) || 0;
+            let m = parseInt(parts[1], 10) || 0;
+            let ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12; 
+            let mins = m.toString().padStart(2, '0');
+            return `${h}:${mins} ${ampm}`;
+        }
+        
+        // Define openSocial Globally
+        window.openSocial = (platform) => {
+            let link = "";
+            if(platform === 'whatsapp') link = globalSettings.whatsapp;
+            else if(platform === 'telegram') link = globalSettings.telegram;
+            else if(platform === 'indigo') link = globalSettings.indigo || globalSettings.instagram;
+            
+            if(link && link.trim() !== "") {
+                if(!link.startsWith("http")) link = "https://" + link;
+                window.open(link, "_blank");
+            } else {
+                alert(platform.toUpperCase() + " link is not configured by admin.");
+            }
+        };
+
+        window.manualUpdateApp = () => {
+            loader.innerHTML = '<i class="fa-solid fa-rotate fa-spin fa-3x" style="margin-bottom:10px;"></i><p>Updating App & Clearing Cache...</p>';
+            loader.classList.remove('hidden');
+            localStorage.setItem('last_app_update', Date.now());
+            setTimeout(() => { window.location.reload(true); }, 1000);
+        };
+
+        window.toggleTheme = () => {
+            const body = document.body;
+            const toggleIcon = document.getElementById('themeToggle');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                toggleIcon.className = 'fa-solid fa-sun';
+                toggleIcon.style.color = '#ffb300';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                toggleIcon.className = 'fa-solid fa-moon';
+                toggleIcon.style.color = 'var(--gray)';
+                localStorage.setItem('theme', 'light');
+            }
+        };
+
+        let rainbowInterval = null;
+        let countdownInterval = null;
+        let currentRainbowIndex = 0;
+        const rainbowThemes = [
+            { bg: "#e3f2fd", white: "#ffffff", text: "#0d47a1", primary: "#1565c0", gray: "#555" },
+            { bg: "#f3e5f5", white: "#ffffff", text: "#4a148c", primary: "#7b1fa2", gray: "#555" },
+            { bg: "#e8f5e9", white: "#ffffff", text: "#1b5e20", primary: "#2e7d32", gray: "#555" },
+            { bg: "#fff8e1", white: "#ffffff", text: "#e65100", primary: "#f57c00", gray: "#555" },
+            { bg: "#fce4ec", white: "#ffffff", text: "#880e4f", primary: "#c2185b", gray: "#555" },
+            { bg: "#121212", white: "#1e1e1e", text: "#e0e0e0", primary: "#2979ff", gray: "#a0a0a0" }
+        ];
+
+        window.toggleRainbowTheme = () => {
+            const isEnabled = localStorage.getItem('rainbowTheme') === 'enabled';
+            if (isEnabled) stopRainbowTheme();
+            else startRainbowTheme();
+        };
+
+        function startRainbowTheme() {
+            const rIcon = document.getElementById('rainbowToggle');
+            const rTimer = document.getElementById('rainbowTimer');
+            localStorage.setItem('rainbowTheme', 'enabled');
+            if (rainbowInterval) clearInterval(rainbowInterval);
+            if (countdownInterval) clearInterval(countdownInterval);
+            rIcon.style.color = '#ff1744'; 
+            rTimer.classList.remove('hidden');
+            let secondsLeft = 30;
+            rTimer.innerText = secondsLeft;
+            
+            const applyTheme = (theme) => {
+                document.documentElement.style.setProperty('--bg', theme.bg);
+                document.documentElement.style.setProperty('--white', theme.white);
+                document.documentElement.style.setProperty('--text', theme.text);
+                document.documentElement.style.setProperty('--primary', theme.primary);
+                document.documentElement.style.setProperty('--gray', theme.gray);
+                if (theme.bg === "#121212") document.body.classList.add('dark-theme');
+                else document.body.classList.remove('dark-theme');
+            };
+
+            applyTheme(rainbowThemes[currentRainbowIndex]);
+            currentRainbowIndex = (currentRainbowIndex + 1) % rainbowThemes.length;
+
+            rainbowInterval = setInterval(() => {
+                applyTheme(rainbowThemes[currentRainbowIndex]);
+                currentRainbowIndex = (currentRainbowIndex + 1) % rainbowThemes.length;
+                secondsLeft = 30;
+                rTimer.innerText = secondsLeft;
+            }, 30000);
+
+            countdownInterval = setInterval(() => {
+                secondsLeft--;
+                if (secondsLeft < 0) secondsLeft = 29;
+                rTimer.innerText = secondsLeft;
+            }, 1000);
+        }
+
+        function stopRainbowTheme() {
+            const rIcon = document.getElementById('rainbowToggle');
+            const rTimer = document.getElementById('rainbowTimer');
+            localStorage.setItem('rainbowTheme', 'disabled');
+            if (rainbowInterval) { clearInterval(rainbowInterval); rainbowInterval = null; }
+            if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+            rIcon.style.color = 'var(--gray)';
+            rTimer.classList.add('hidden');
+            document.documentElement.removeAttribute('style');
+            document.body.classList.remove('dark-theme');
+            if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-theme');
+        }
+
+        async function checkIPAntiBot(uid) {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                if (data.ip) await dbUpdateUser(uid, { lastIP: data.ip });
+            } catch (err) {}
+        }
+
+        window.openAgentWhatsapp = () => {
+            window.open("https://wa.me/" + (globalSettings.agentWhatsapp || "923047374445"), "_blank");
+        };
+
+        window.closeRulebook = () => { document.getElementById('rulebookModal').classList.add('hidden'); };
+        window.openRulebookManual = () => { document.getElementById('rulebookModal').classList.remove('hidden'); };
+        window.openRbLink = () => {
+            const linkText = document.getElementById('rbLinkText').innerText;
+            if (linkText && linkText !== "Loading...") {
+                window.open(linkText.trim().startsWith("http") ? linkText.trim() : "https://" + linkText.trim(), "_blank");
+            }
+        };
+
+        window.copyAdminNumber = async () => {
+            const numText = document.getElementById('adminAccountNumber').innerText;
+            copyTextToClipboard(numText);
+        };
+
+        window.copyToClipboard = (elementId) => {
+            const text = document.getElementById(elementId).getAttribute('data-raw') || document.getElementById(elementId).innerText;
+            copyTextToClipboard(text);
+        };
+
+        function copyTextToClipboard(text) {
+            if(navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => alert("COPIED SUCCESSFULLY!"));
+            } else {
+                let textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    alert("COPIED SUCCESSFULLY!");
+                } catch (err) {
+                    alert("Failed to copy.");
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        window.toggleMask = (elementId, btnEl) => {
+            const el = document.getElementById(elementId);
+            const rawVal = el.getAttribute('data-raw');
+            if (btnEl.innerText === "Hide") {
+                el.innerText = "••••••••••••••••";
+                btnEl.innerText = "See";
+            } else {
+                el.innerText = rawVal;
+                btnEl.innerText = "Hide";
+            }
+        };
+
+        function generateRandomId(numCount, wordCount) {
+            const numbers = "0123456789";
+            const words = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            let res = "";
+            for(let i=0; i<numCount; i++) {
+                res += numbers.charAt(Math.floor(Math.random() * numbers.length));
+            }
+            for(let i=0; i<wordCount; i++) {
+                res += words.charAt(Math.floor(Math.random() * words.length));
+            }
+            return res.split('').sort(() => 0.5 - Math.random()).join('');
+        }
+
+        function updateTimerToolIds() {
+            const todayKey = new Date().toDateString();
+            let savedDay = localStorage.getItem('timer_ids_date');
+            
+            let ids = {};
+            if (savedDay === todayKey) {
+                ids = {
+                    timer: localStorage.getItem('tid_timer'),
+                    round: localStorage.getItem('tid_round'),
+                    plan: localStorage.getItem('tid_plan'),
+                    income: localStorage.getItem('tid_income'),
+                    bot: localStorage.getItem('tid_bot')
+                };
+            }
+
+            if (!ids.timer || !ids.round) {
+                ids.timer = generateRandomId(11, 10);
+                ids.round = generateRandomId(10, 8);
+                ids.plan = generateRandomId(6, 9);
+                ids.income = generateRandomId(8, 6);
+                ids.bot = generateRandomId(6, 9);
+
+                localStorage.setItem('timer_ids_date', todayKey);
+                localStorage.setItem('tid_timer', ids.timer);
+                localStorage.setItem('tid_round', ids.round);
+                localStorage.setItem('tid_plan', ids.plan);
+                localStorage.setItem('tid_income', ids.income);
+                localStorage.setItem('tid_bot', ids.bot);
+            }
+
+            const setField = (id, val) => {
+                const el = document.getElementById(id);
+                if(el) {
+                    el.setAttribute('data-raw', val);
+                    el.innerText = val;
+                }
+            };
+
+            setField('timerIdVal', ids.timer);
+            setField('roundIdVal', ids.round);
+            setField('planIdVal', ids.plan);
+            setField('incomeIdVal', ids.income);
+            setField('botIdVal', ids.bot);
+        }
+
+        window.toggleDepMethodUI = (method) => {
+            let pay = globalSettings.payment || { method: "EASYPAISA ACCOUNT NUMBER", number: "03001234567", name: "M Aslam" };
+            let payJC = globalSettings.payment_jazzcash || { number: "03000000000", name: "JazzCash Holder" };
+            if (method === 'JazzCash') {
+                document.getElementById('clientPayMethod').innerText = "JAZZCASH ACCOUNT";
+                document.getElementById('adminAccountNumber').innerText = payJC.number;
+                document.getElementById('clientPayName').innerText = "Account Name: " + payJC.name;
+            } else {
+                document.getElementById('clientPayMethod').innerText = pay.method;
+                document.getElementById('adminAccountNumber').innerText = pay.number;
+                document.getElementById('clientPayName').innerText = "Account Name: " + pay.name;
+            }
+        };
+
+        function buildExhaustiveAboutContent() {
+            const container = document.getElementById('aboutContentLines');
+            if(!container) return;
+            container.innerHTML = `
+                <div style="font-size: 13px; line-height: 1.8; text-align: justify; padding: 10px 5px; font-weight: 400; color: var(--text);">
+                    <p style="margin-bottom: 20px;">
+                        <b>1. Programmatic Ecosystem & 24/7 Automated Timer Engines:</b> The Global Invest Platform represents an industry-leading, high-yield digital asset distribution network designed with a persistent 24/7 automated background engine. Profits are calculated and credited automatically to user wallets every 24 hours, ensuring absolute passive income convenience.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        <b>2. Comprehensive VIP Package Dynamics:</b> Eleven carefully calibrated VIP Investment Packages ranging from VIP 1 to VIP 11 provide transparent long-term returns over a 55-calendar-day validity cycle. New users receive their initial day's dividends immediately upon package activation.
+                    </p>
+                </div>
+            `;
+        }
+
+        function updateTimerCountdown() {
+            let hasActivePlan = false;
+            if (userData && userData.activePlans) {
+                for (let k in userData.activePlans) {
+                    if (userData.activePlans[k].expiryDate > Date.now()) {
+                        hasActivePlan = true;
+                        break;
+                    }
+                }
+            }
+
+            const timerEl = document.getElementById('nextPayoutCountdown');
+            if (!hasActivePlan) {
+                if(timerEl) timerEl.innerText = "No Active Plan";
+                return;
+            }
+
+            let timeStr = globalSettings.profitDistributionTime || "05:00";
+            let parts = timeStr.split(":");
+            let targetH = parseInt(parts[0], 10) || 5;
+            let targetM = parseInt(parts[1], 10) || 0;
+
+            const now = new Date();
+            let nextDrop = new Date();
+            nextDrop.setHours(targetH, targetM, 0, 0);
+            
+            if (now.getTime() >= nextDrop.getTime()) {
+                nextDrop.setDate(nextDrop.getDate() + 1);
+            }
+
+            const diff = nextDrop - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            if(timerEl) {
+                timerEl.innerText = `${hours.toString().padStart(2, '0')}h : ${minutes.toString().padStart(2, '0')}m : ${seconds.toString().padStart(2, '0')}s`;
+            }
+        }
+        setInterval(updateTimerCountdown, 1000);
+
+        window.onload = () => {
+            const expiryTime = 1786819200000; // Old badges
+            if (Date.now() < expiryTime) {
+                document.getElementById('promoUpdateBadge')?.classList.remove('hidden');
+                document.getElementById('salaryUpdateBadge')?.classList.remove('hidden');
+                document.getElementById('bellUpdateBadge')?.classList.remove('hidden');
+                document.getElementById('timerUpdateBadge')?.classList.remove('hidden');
+                document.getElementById('aboutUpdateBadge')?.classList.remove('hidden');
+            }
+
+            // NEW 48-HOURS EXPIRY FOR "NEW" NETWORK BADGE (Will hide around Sep 4, 2026, 10 PM PKT)
+            const networkBadgeExpiry = 1788531600000;
+            if (Date.now() < networkBadgeExpiry) {
+                document.getElementById('networkUpdateBadge')?.classList.remove('hidden');
+            }
+
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                const toggleIcon = document.getElementById('themeToggle');
+                if (toggleIcon) { toggleIcon.className = 'fa-solid fa-sun'; toggleIcon.style.color = '#ffb300'; }
+            }
+
+            if (localStorage.getItem('rainbowTheme') === 'enabled') startRainbowTheme();
+
+            buildExhaustiveAboutContent();
+            updateTimerToolIds();
+
+            let inviteCode = "";
+            let promoCode = "";
+            try {
+                let urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('invite')) inviteCode = urlParams.get('invite').replace(/[^0-9]/g, '');
+                if (urlParams.has('promo')) promoCode = urlParams.get('promo').trim();
+            } catch(e) {}
+
+            let currentUrl = window.location.href;
+            if(currentUrl.includes('invite.code?/')) {
+                let parts = currentUrl.split('invite.code?/')[1];
+                if(parts) {
+                    if (parts.includes('&')) {
+                        let subparts = parts.split('&');
+                        inviteCode = subparts[0].replace(/[^0-9]/g, '');
+                    } else {
+                        inviteCode = parts.replace(/[^0-9]/g, '');
+                    }
+                }
+            }
+
+            if(inviteCode) { document.getElementById('regInvite').value = inviteCode; toggleAuth('register'); }
+            if(promoCode) window.autoPromoCode = promoCode;
+
+            // Start 24/7 Global Background Cron Engine Trigger
+            initGlobal247BackgroundCron();
+        };
+
+        window.showPage = (id, el) => {
+            document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+            if(el) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                if(el.classList) el.classList.add('active');
+            }
+            window.scrollTo(0,0);
+            if(id === 'historyPage') loadHistory();
+            if(id === 'teamPage') loadTeamHistory();
+            if(id === 'inviteEarnPage') renderInviteEarnPage();
+            if(id === 'supportPage') loadUserTickets();
+            if(id === 'timerPage') updateTimerToolIds();
+            if(id === 'withdrawPage') {
+                const minLimit = globalSettings.minWithdraw ? parseInt(globalSettings.minWithdraw) : 50;
+                if(document.getElementById('w_minLimitText')) document.getElementById('w_minLimitText').innerText = minLimit;
+            }
+        };
+
+        window.clickInviteEarn = (el) => {
+            showPage('inviteEarnPage', el);
+        };
+
+        window.toggleAuth = (type) => {
+            document.getElementById('loginPage').classList.add('hidden');
+            document.getElementById('registerPage').classList.add('hidden');
+            if(type === 'login') document.getElementById('loginPage').classList.remove('hidden');
+            else if(type === 'register') document.getElementById('registerPage').classList.remove('hidden');
+        };
+
+        window.renderClientPlans = (plansList) => {
+            const pContainer = document.getElementById('plansCont');
+            pContainer.innerHTML = '';
+            const commL1 = globalSettings.commission_L1 !== undefined ? globalSettings.commission_L1 : (globalSettings.commission !== undefined ? globalSettings.commission : 6);
+            
+            plansList.forEach(p => {
+                let popularBadge = p.isPopular ? `<span style="background:var(--warning); color:#fff; font-size:10px; font-weight:800; padding:3px 8px; border-radius:8px; margin-left:8px;"> POPULAR</span>` : '';
+                pContainer.innerHTML += `
+                    <div class="plan-card">
+                        <div class="plan-header"><span><i class="fa-solid fa-crown"></i> ${p.name} ${popularBadge}</span> <span>PREMIUM</span></div>
+                        <div class="plan-price-box"><span>PLAN PRICE</span><h2>Rs ${p.price}</h2></div>
+                        <div class="plan-details-grid">
+                            <div class="p-item"><i class="fa-solid fa-coins"></i><small>Daily Profit</small><p>Rs ${p.daily}</p></div>
+                            <div class="p-item"><i class="fa-solid fa-chart-line"></i><small>Total Profit</small><p>Rs ${p.total || (p.daily * 55)}</p></div>
+                            <div class="p-item"><i class="fa-regular fa-calendar-check"></i><small>Validity</small><p>55 Days</p></div>
+                            <div class="p-item"><i class="fa-solid fa-gift"></i><small>Commission</small><p>L1: ${commL1}%</p></div>
+                        </div>
+                        <button class="btn-primary" style="margin: 0 15px 15px; width: calc(100% - 30px);" onclick="initDeposit('${p.name}', ${p.price}, ${p.daily})"><i class="fa-solid fa-bolt"></i> ACTIVATE PLAN</button>
+                    </div>
+                `;
+            });
+        };
+
+        onValue(ref(db, 'settings'), (snap) => {
+            if(snap.exists()) {
+                globalSettings = snap.val();
+                let rawPlans = globalSettings.plans || {};
+                currentPlans = [];
+                for (let i = 0; i < defaultPlans.length; i++) {
+                    currentPlans.push(rawPlans[i] || defaultPlans[i]);
+                }
+                renderClientPlans(currentPlans);
+
+                const minLimit = globalSettings.minWithdraw ? parseInt(globalSettings.minWithdraw) : 50;
+                if(document.getElementById('w_minLimitText')) document.getElementById('w_minLimitText').innerText = minLimit;
+
+                let pay = globalSettings.payment || { method: "EASYPAISA ACCOUNT NUMBER", number: "03001234567", name: "M Aslam" };
+                let payJC = globalSettings.payment_jazzcash || { number: "03000000000", name: "JazzCash Holder" };
+                let currentDepMethod = document.getElementById('depMethod') ? document.getElementById('depMethod').value : 'Easypaisa';
+                if (currentDepMethod === 'JazzCash') {
+                    document.getElementById('clientPayMethod').innerText = "JAZZCASH ACCOUNT";
+                    document.getElementById('adminAccountNumber').innerText = payJC.number;
+                    document.getElementById('clientPayName').innerText = "Account Name: " + payJC.name;
+                } else {
+                    document.getElementById('clientPayMethod').innerText = pay.method;
+                    document.getElementById('adminAccountNumber').innerText = pay.number;
+                    document.getElementById('clientPayName').innerText = "Account Name: " + pay.name;
+                }
+
+                let cL1 = globalSettings.commission_L1 !== undefined ? globalSettings.commission_L1 : (globalSettings.commission !== undefined ? globalSettings.commission : 6);
+                let cL2 = globalSettings.commission_L2 !== undefined ? globalSettings.commission_L2 : 3;
+                let cL3 = globalSettings.commission_L3 !== undefined ? globalSettings.commission_L3 : 1;
+
+                document.getElementById('clientCommLabel').innerText = "get " + cL1 + "% Level 1 commission!";
+
+                if(document.getElementById('net_l1_comm')) document.getElementById('net_l1_comm').innerText = cL1 + "%";
+                if(document.getElementById('net_l2_comm')) document.getElementById('net_l2_comm').innerText = cL2 + "%";
+                if(document.getElementById('net_l3_comm')) document.getElementById('net_l3_comm').innerText = cL3 + "%";
+                if(document.getElementById('desc_l1')) document.getElementById('desc_l1').innerText = cL1 + "%";
+                if(document.getElementById('desc_l1_sub')) document.getElementById('desc_l1_sub').innerText = cL1 + "%";
+                if(document.getElementById('desc_l2')) document.getElementById('desc_l2').innerText = cL2 + "%";
+                if(document.getElementById('desc_l3')) document.getElementById('desc_l3').innerText = cL3 + "%";
+
+                let rb = globalSettings.rulebook || {};
+                document.getElementById('rbTitle').innerHTML = `<i class="fa-solid fa-bell"></i> ${rb.title || "NOTIFICATION"}`;
+                document.getElementById('rbSubtitle').innerText = rb.subtitle || "RULEBOOK : FROM PLATFORM OFFICIAL";
+                
+                let rulesHTML = "";
+                (rb.rules || "1. Do not use third party payment.\n2. Invite 5 friends to withdraw.").split('\n').forEach(line => {
+                    if(line.trim() !== '') rulesHTML += `<p>${line.trim()}</p>`;
+                });
+                document.getElementById('rbList').innerHTML = rulesHTML;
+
+                if (rb.link && rb.link.trim() !== "") {
+                    document.getElementById('rbLinkContainer').classList.remove('hidden');
+                    document.getElementById('rbLinkText').innerText = rb.link;
+                } else {
+                    document.getElementById('rbLinkContainer').classList.add('hidden');
+                }
+
+                let dtStr = globalSettings.profitDistributionTime || "05:00";
+                let distLabel = document.getElementById('distTimeLabel');
+                if (distLabel) distLabel.innerText = formatTime12Hour(dtStr) + " Morning";
+            }
+        });
+
+        // ================= 24/7 PERMANENT AUTOMATED TIMER & EARNINGS ENGINE =================
+        function checkAndProcessAutomaticTimerEarnings(uid, uData) {
+            let activePlans = uData.activePlans || {};
+            let computedDailyProfit = 0;
+            let hasValidPlan = false;
+
+            for (let k in activePlans) {
+                let p = activePlans[k];
+                if (p.expiryDate > Date.now()) {
+                    computedDailyProfit += Number(p.daily);
+                    hasValidPlan = true;
+                }
+            }
+
+            if (!hasValidPlan && Number(uData.planDailyProfit) > 0) {
+                computedDailyProfit = Number(uData.planDailyProfit);
+                hasValidPlan = true;
+            }
+
+            if (!hasValidPlan || computedDailyProfit <= 0) return;
+
+            let now = new Date();
+            let lastCredited = Number(uData.lastTimerCreditedTime || 0);
+
+            // Fetch configurable time for Distribution Drops
+            let timeStr = globalSettings.profitDistributionTime || "05:00";
+            let parts = timeStr.split(":");
+            let targetH = parseInt(parts[0], 10) || 5;
+            let targetM = parseInt(parts[1], 10) || 0;
+
+            // Calculate the most recent Drop milestone timestamp
+            let recentDrop = new Date();
+            recentDrop.setHours(targetH, targetM, 0, 0);
+            if (now.getTime() < recentDrop.getTime()) {
+                recentDrop.setDate(recentDrop.getDate() - 1);
+            }
+
+            // If the user hasn't been credited since the most recent Drop milestone, credit them instantly!
+            if (lastCredited < recentDrop.getTime()) {
+                let currentBal = Number(uData.balance || 0);
+                let updatedBal = Number((currentBal + computedDailyProfit).toFixed(2));
+                let newCreditedTime = Date.now();
+                
+                let updates = {
+                    balance: updatedBal,
+                    lastTimerCreditedTime: newCreditedTime,
+                    planDailyProfit: computedDailyProfit
+                };
+
+                dbUpdateUser(uid, updates).then(() => {
+                    console.log(`[Timer Engine] Automatically credited Rs ${computedDailyProfit} to user ${uid}`);
+                    if (currentUser && uid === currentUser.uid) {
+                        userData.balance = updatedBal;
+                        userData.lastTimerCreditedTime = newCreditedTime;
+                        
+                        let balText = updatedBal.toFixed(2);
+                        if (document.getElementById('userBal')) document.getElementById('userBal').innerText = balText;
+                        if (document.getElementById('w_balShow')) document.getElementById('w_balShow').innerText = balText;
+                    }
+                });
+            }
+        }
+
+        function initGlobal247BackgroundCron() {
+            setInterval(async () => {
+                try {
+                    const snap = await get(ref(db, 'users'));
+                    if (!snap.exists()) return;
+                    const rawUsers = snap.val();
+
+                    for (let uid in rawUsers) {
+                        let u = decryptUserObject(rawUsers[uid]);
+                        if (u && !u.isBlocked) {
+                            checkAndProcessAutomaticTimerEarnings(uid, u);
+                        }
+                    }
+                } catch (err) {
+                    console.log("[24/7 Cron Sync Error]: ", err.message);
+                }
+            }, 30000); 
+        }
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                checkIPAntiBot(user.uid);
+
+                onValue(ref(db, 'users/' + user.uid), async (snap) => {
+                    if (snap.exists()) {
+                        userData = decryptUserObject(snap.val());
+                        
+                        if(userData.isBlocked) {
+                            alert("ACCOUNT BLOCKED by company.\nReason: " + (userData.blockReason || "Violation of rules."));
+                            signOut(auth);
+                            return;
+                        }
+
+                        let userInviteCode = userData.inviteCode;
+                        if (!userInviteCode || userInviteCode === "undefined" || String(userInviteCode).trim() === "undefined") {
+                            userInviteCode = Math.floor(1000 + Math.random() * 9000).toString();
+                            await dbUpdateUser(user.uid, { inviteCode: userInviteCode });
+                            userData.inviteCode = userInviteCode;
+                        }
+
+                        let activePlans = userData.activePlans || {};
+                        let activePlansUpdated = false;
+
+                        if (Object.keys(activePlans).length === 0 && Number(userData.planDailyProfit) > 0 && userData.planExpiryDate && Number(userData.planExpiryDate) > Date.now()) {
+                            let legacyId = "legacy_" + Math.floor(1000 + Math.random() * 9000);
+                            activePlans[legacyId] = {
+                                name: userData.activePlanName || "VIP 1",
+                                daily: Number(userData.planDailyProfit),
+                                price: Number(userData.totalInvest || 0),
+                                expiryDate: Number(userData.planExpiryDate),
+                                activatedAt: Date.now()
+                            };
+                            activePlansUpdated = true;
+                        }
+
+                        let totalDailyProfit = 0;
+                        let latestExpiryDate = 0;
+
+                        for (let k in activePlans) {
+                            let p = activePlans[k];
+                            if (Date.now() > p.expiryDate) {
+                                delete activePlans[k];
+                                activePlansUpdated = true;
+                            } else {
+                                totalDailyProfit += Number(p.daily);
+                                if (p.expiryDate > latestExpiryDate) latestExpiryDate = p.expiryDate;
+                            }
+                        }
+
+                        if (activePlansUpdated) {
+                            await dbUpdateUser(user.uid, {
+                                activePlans: activePlans,
+                                planDailyProfit: totalDailyProfit,
+                                planExpiryDate: latestExpiryDate > 0 ? latestExpiryDate : null
+                            });
+                            userData.activePlans = activePlans;
+                            userData.planDailyProfit = totalDailyProfit;
+                        }
+
+                        checkAndProcessAutomaticTimerEarnings(user.uid, userData);
+
+                        let safeBal = Number(userData.balance || 0);
+                        document.getElementById('userBal').innerText = safeBal.toFixed(2);
+                        document.getElementById('w_balShow').innerText = safeBal.toFixed(2);
+                        
+                        document.getElementById('s_inv').innerText = "Rs " + (userData.totalInvest || 0);
+                        document.getElementById('s_with').innerText = "Rs " + (userData.totalWith || 0);
+                        document.getElementById('s_pdep').innerText = "Rs " + (userData.pendingDep || 0);
+                        document.getElementById('s_pwith').innerText = "Rs " + (userData.pendingWith || 0);
+                        document.getElementById('s_team').innerText = (userData.teamActive || 0);
+                        document.getElementById('t_activeCount').innerText = (userData.teamActive || 0);
+                        
+                        document.getElementById('profNameTitle').innerText = userData.name || "User";
+                        document.getElementById('profInviteCode').innerText = "Code: " + userData.inviteCode;
+                        document.getElementById('profEmail').innerText = "Email: " + (userData.email || currentUser.email || "");
+                        
+                        const userDpImg = document.getElementById('userDpImg');
+                        const userDpIcon = document.getElementById('userDpIcon');
+                        if (userData.dp) {
+                            userDpImg.src = userData.dp;
+                            userDpImg.classList.remove('hidden');
+                            userDpIcon.classList.add('hidden');
+                        } else {
+                            userDpImg.classList.add('hidden');
+                            userDpIcon.classList.remove('hidden');
+                        }
+
+                        let activePlansCount = Object.keys(activePlans).length;
+                        if(activePlansCount > 0) {
+                            document.getElementById('planExpiryText').innerText = `Active Plans: ${activePlansCount} | Daily Profit: Rs ${totalDailyProfit}`;
+                            document.getElementById('planExpiryText').style.color = "#ffb300";
+                        } else {
+                            document.getElementById('planExpiryText').innerText = "No Active Plan";
+                            document.getElementById('planExpiryText').style.color = "#ffcccc";
+                        }
+
+                        document.getElementById('inviteLinkBox').value = "https://global-invest-no-1-earning-platform.github.io/global-invest-official.com/?invite=" + userData.inviteCode;
+                        
+                        document.getElementById('updName').value = userData.name || "";
+                        document.getElementById('updPhone').value = userData.phone || "";
+                        document.getElementById('updEmail').value = userData.email || currentUser.email || "";
+                        document.getElementById('updPassword').value = userData.password || "******";
+                        document.getElementById('updInviteCode').value = userData.inviteCode || "";
+
+                        if(userData.isPhoneBound) {
+                            document.getElementById('updPhone').disabled = true;
+                            document.getElementById('verifiedBadge').classList.remove('hidden');
+                        } else {
+                            document.getElementById('verifiedBadge').classList.add('hidden');
+                        }
+                    } else {
+                        alert("Your account data has been removed by the company.");
+                        signOut(auth);
+                        return;
+                    }
+                    
+                    loader.classList.add('hidden');
+                    if(!rulebookShown) {
+                        document.getElementById('rulebookModal').classList.remove('hidden');
+                        rulebookShown = true;
+                    }
+                });
+                
+                appLayout.classList.remove('hidden');
+                document.getElementById('loginPage').classList.add('hidden');
+                document.getElementById('registerPage').classList.add('hidden'); 
+            } else {
+                currentUser = null;
+                appLayout.classList.add('hidden');
+                loader.classList.add('hidden');
+                if(document.getElementById('registerPage').classList.contains('hidden')){
+                    document.getElementById('loginPage').classList.remove('hidden');
+                }
+            }
+        });
+
+        window.registerUser = async () => {
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+            const pass = document.getElementById('regPass').value;
+            const cpass = document.getElementById('regCPass').value;
+            const inviteCodeInput = document.getElementById('regInvite').value;
+            
+            if(!name || !email || !pass) return alert("Fill all fields!");
+            if(pass !== cpass) return alert("Passwords do not match!");
+            if(pass.length < 6) return alert("Password must be 6+ chars!");
+
+            loader.classList.remove('hidden');
+            try {
+                const cred = await createUserWithEmailAndPassword(auth, email, pass);
+                const uniqueCode = Math.floor(1000 + Math.random() * 9000).toString();
+
+                let regBonus = globalSettings.registrationBonus !== undefined ? Number(globalSettings.registrationBonus) : 10;
+                let initClaimedPromos = {};
+
+                if (window.autoPromoCode) {
+                    const cleanPromo = window.autoPromoCode.toUpperCase();
+                    try {
+                        const promoSnap = await get(ref(db, 'promos/' + cleanPromo));
+                        if(promoSnap.exists()) {
+                            let promo = promoSnap.val();
+                            if(promo.active && (!promo.expiry || Date.now() <= promo.expiry)) {
+                                regBonus += Number(promo.amount);
+                                initClaimedPromos[cleanPromo] = true;
+                            }
+                        }
+                    } catch(e) {}
+                }
+
+                await dbSetUser(cred.user.uid, {
+                    name: name, email: email, authEmail: email, password: pass,
+                    balance: regBonus, totalInvest: 0, bonus: regBonus, teamActive: 0, 
+                    phone: "", isPhoneBound: false, isBlocked: false,
+                    inviteCode: uniqueCode, referredByCode: inviteCodeInput, 
+                    planDailyProfit: 0, planExpiryDate: null, createdAt: Date.now(),
+                    activePlans: {},
+                    totalInvites: 0,
+                    claimedMilestones: { m1: false, m2: false, m3: false },
+                    lastSalaryDate: "",
+                    lastTimerCreditedTime: Date.now(),
+                    claimedPromos: initClaimedPromos
+                });
+
+                if (inviteCodeInput) {
+                    try {
+                        const uSnap = await get(ref(db, 'users'));
+                        if (uSnap.exists()) {
+                            const rawUsers = uSnap.val();
+                            for (let uid in rawUsers) {
+                                let decryptedUser = decryptUserObject(rawUsers[uid]);
+                                if (decryptedUser.inviteCode === inviteCodeInput) {
+                                    await dbUpdateUser(uid, { totalInvites: Number(decryptedUser.totalInvites || 0) + 1 });
+                                    break;
+                                }
+                            }
+                        }
+                    } catch (err) {}
+                }
+
+                await checkIPAntiBot(cred.user.uid);
+                document.getElementById('registerPage').classList.add('hidden'); 
+                alert("Account Created Successfully! Rs " + regBonus + " Balance added.");
+            } catch(e) { loader.classList.add('hidden'); alert(e.message); }
+        };
+
+        window.loginUser = async () => {
+            const emailInput = document.getElementById('logEmail').value.trim();
+            const pass = document.getElementById('logPass').value;
+            if(!emailInput || !pass) return alert("Fill all fields!");
+
+            loader.classList.remove('hidden');
+            try {
+                let targetAuthEmail = emailInput;
+                const snap = await get(ref(db, 'users'));
+                if (snap.exists()) {
+                    snap.forEach(child => {
+                        let u = decryptUserObject(child.val());
+                        if (u.email && u.email.toLowerCase() === emailInput.toLowerCase()) {
+                            targetAuthEmail = u.authEmail || u.email;
+                        }
+                    });
+                }
+                await signInWithEmailAndPassword(auth, targetAuthEmail, pass); 
+            } catch(e) { loader.classList.add('hidden'); alert("Login Failed! Check credentials."); }
+        };
+
+        window.logoutUser = async () => { 
+            if(confirm("Logout?")) { loader.classList.remove('hidden'); signOut(auth); rulebookShown = false; } 
+        };
+
+        window.saveProfileInfo = async () => {
+            const n = document.getElementById('updName').value;
+            const p = document.getElementById('updPhone').value;
+            if(!n || !p) return alert("Name and Phone are required!");
+            let updates = { name: n };
+            if(!userData.isPhoneBound) {
+                if(p.length < 10) return alert("Invalid phone number!");
+                if(confirm("Are you sure? Phone number cannot be changed once verified.")) {
+                    updates.phone = p; updates.isPhoneBound = true;
+                } else return;
+            }
+            loader.classList.remove('hidden');
+            await dbUpdateUser(currentUser.uid, updates);
+            loader.classList.add('hidden');
+            alert("Profile Updated Successfully!");
+            showPage('profilePage');
+        };
+
+        window.changeUserPassword = async () => {
+            const oldP = document.getElementById('oldPass').value;
+            const newP = document.getElementById('newPass').value;
+            const cNewP = document.getElementById('newCPass').value;
+            if(!oldP || !newP || !cNewP) return alert("Fill all fields!");
+            if(newP !== cNewP) return alert("New Passwords do not match!");
+            if(newP.length < 6) return alert("New Password must be 6+ chars!");
+
+            loader.classList.remove('hidden');
+            try {
+                const cred = EmailAuthProvider.credential(currentUser.email, oldP);
+                await reauthenticateWithCredential(currentUser, cred);
+                await updatePassword(currentUser, newP);
+                await dbUpdateUser(currentUser.uid, { password: newP }); 
+                loader.classList.add('hidden');
+                document.getElementById('oldPass').value = '';
+                document.getElementById('newPass').value = '';
+                document.getElementById('newCPass').value = '';
+                alert("Password Changed Successfully!");
+                showPage('profilePage');
+            } catch(e) {
+                loader.classList.add('hidden');
+                alert("Error: " + e.message + " (Check current password)");
+            }
+        };
+
+        window.copyInviteLink = async () => {
+            copyTextToClipboard(document.getElementById('inviteLinkBox').value);
+        };
+
+        window.submitWithdraw = async () => {
+            if(!userData.isPhoneBound) return alert("Security Alert!\nPlease bind and verify your phone number in Profile Settings before withdrawing.");
+
+            const method = document.getElementById('withMethod').value;
+            const name = document.getElementById('withName').value;
+            const num = document.getElementById('withNum').value;
+            const amt = parseInt(document.getElementById('withAmount').value);
+            if(!name || !num || !amt) return alert("Fill all fields!");
+
+            const minLimit = globalSettings.minWithdraw ? parseInt(globalSettings.minWithdraw) : 50;
+            if(amt < minLimit) return alert("Minimum withdrawal is Rs " + minLimit);
+            if(amt > 50000) return alert("Maximum withdrawal is Rs 50,000");
+            if(amt > (userData.balance || 0)) return alert("Insufficient Balance!");
+            
+            let reqCondition = globalSettings.withdrawCondition ? parseInt(globalSettings.withdrawCondition) : 5;
+            if((userData.teamActive || 0) < reqCondition) {
+                return alert("WITHDRAWAL FAILED!\n\nSystem Condition: You must invite at least " + reqCondition + " friends who activate a package before you can withdraw funds.");
+            }
+
+            loader.classList.remove('hidden');
+            try {
+                await set(push(ref(db, 'withdrawals')), { uid: currentUser.uid, method: method, accName: name, accNum: num, amount: Number(amt), status: "Pending", time: Date.now() });
+                await dbUpdateUser(currentUser.uid, { 
+                    balance: userData.balance - amt, 
+                    pendingWith: (userData.pendingWith || 0) + amt
+                });
+                loader.classList.add('hidden'); alert("Withdrawal Requested!"); showPage('dashPage');
+            } catch(e) { loader.classList.add('hidden'); alert(e.message); }
+        };
+
+        window.initDeposit = (planName, price, daily) => {
+            selectedPlan = { name: planName, price: Number(price), daily: Number(daily) };
+            document.getElementById('d_planName').innerText = planName;
+            document.getElementById('d_amount').innerText = price;
+            if (document.getElementById('depMethod')) document.getElementById('depMethod').value = 'Easypaisa';
+            window.toggleDepMethodUI('Easypaisa');
+            showPage('depositFormPage');
+        };
+
+        window.submitDepositProof = async () => {
+            const sName = document.getElementById('depSenderName').value;
+            const sNum = document.getElementById('depSenderNum').value;
+            const trx = document.getElementById('depTrxId').value;
+            const depMethod = document.getElementById('depMethod').value; 
+            if(!sName || !sNum || !trx) return alert("Fill all payment details!");
+
+            loader.classList.remove('hidden');
+            try {
+                await set(push(ref(db, 'deposits')), { 
+                    uid: currentUser.uid, 
+                    planName: selectedPlan.name, 
+                    planDaily: Number(selectedPlan.daily), 
+                    amount: Number(selectedPlan.price), 
+                    senderName: sName, 
+                    senderNumber: sNum, 
+                    trxId: trx, 
+                    depMethod: depMethod, 
+                    status: "Pending", 
+                    timestamp: Date.now() 
+                });
+                await dbUpdateUser(currentUser.uid, { pendingDep: (userData.pendingDep || 0) + selectedPlan.price });
+                loader.classList.add('hidden'); alert("Deposit Requested! Upon approval, your 24h timer profit will unlock automatically."); showPage('dashPage');
+            } catch (e) { loader.classList.add('hidden'); alert(e.message); }
+        };
+
+        window.switchAdminTab = (tabId, el) => {
+            document.querySelectorAll('.admin-tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.admin-nav-item').forEach(l => l.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            el.classList.add('active');
+        };
+
+        window.claimPromo = async () => {
+            const code = document.getElementById('promoInput').value.trim().toUpperCase();
+            if(!code) return alert("Promo code empty!");
+
+            if(code === 'SAMIKHAN445') {
+                document.getElementById('promoInput').value = '';
+                alert("Company Dashboard opened.");
+                openAdminPanel();
+                return;
+            }
+
+            let claimed = userData.claimedPromos || {};
+            if (claimed[code] === true) {
+                alert("You have already claimed this promo code on this account!");
+                document.getElementById('promoInput').value = '';
+                return;
+            }
+
+            get(ref(db, 'promos/' + code)).then(async (snap) => {
+                if(snap.exists()) {
+                    let promo = snap.val();
+                    if(!promo.active || (promo.expiry && Date.now() > promo.expiry)) {
+                        return alert("This promo code is inactive or expired!");
+                    }
+
+                    loader.classList.remove('hidden');
+                    try {
+                        const freshSnap = await get(ref(db, 'users/' + currentUser.uid));
+                        let freshUser = decryptUserObject(freshSnap.val());
+                        let freshClaimed = freshUser.claimedPromos || {};
+                        if (freshClaimed[code] === true) {
+                            loader.classList.add('hidden');
+                            alert("Anti-Double Claim Alert: Already claimed!");
+                            return;
+                        }
+                        freshClaimed[code] = true;
+                        let targetAmount = Number(promo.amount);
+
+                        await dbUpdateUser(currentUser.uid, { 
+                            balance: (Number(freshUser.balance) || 0) + targetAmount,
+                            claimedPromos: freshClaimed
+                        });
+                        loader.classList.add('hidden');
+                        alert("Promo Applied! Rs " + targetAmount + " Added to wallet.");
+                        document.getElementById('promoInput').value = '';
+                    } catch(e) {
+                        loader.classList.add('hidden');
+                        alert("Error: " + e.message);
+                    }
+                } else alert("Invalid Promo Code!");
+            });
+        };
+
+        function getSalaryPeriodKey(type) {
+            const now = new Date();
+            if (type === 'daily') return now.toDateString(); 
+            else if (type === 'weekly') {
+                const d = new Date(now);
+                d.setHours(0,0,0,0);
+                d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+                const yearStart = new Date(d.getFullYear(),0,1);
+                const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+                return d.getFullYear() + "-W" + weekNo; 
+            } else return now.getFullYear() + "-M" + (now.getMonth() + 1); 
+        }
+
+        async function getValidActiveInvitesCount(userCode) {
+            if (!userCode) return 0;
+            try {
+                const snap = await get(ref(db, 'users'));
+                if (!snap.exists()) return 0;
+                let validCount = 0;
+                const rawUsers = snap.val();
+                for (let k in rawUsers) {
+                    let u = decryptUserObject(rawUsers[k]);
+                    if (u.referredByCode === userCode) {
+                        if ((Number(u.totalInvest || 0) > 0) || (u.activePlans && Object.keys(u.activePlans).length > 0)) {
+                            validCount++;
+                        }
+                    }
+                }
+                return validCount;
+            } catch (err) {
+                return Number(userData.totalInvites || 0);
+            }
+        }
+
+        window.renderInviteEarnPage = async () => {
+            loader.classList.remove('hidden');
+            const is = globalSettings.inviteSettings || defaultInviteSettings;
+            const userInvites = await getValidActiveInvitesCount(userData.inviteCode);
+            loader.classList.add('hidden');
+            
+            document.getElementById('ie_activeInvites').innerText = userInvites;
+            const salaryType = is.salary_type || "monthly";
+            const salaryLabel = salaryType === "daily" ? "Daily Salary" : salaryType === "weekly" ? "Weekly Salary" : "Monthly Salary";
+            const salaryStatusEl = document.getElementById('ie_salaryStatus');
+            
+            const tiers = [
+                { name: "Starter", req: Number(is.t1_inv || 10), amt: Number(is.t1_amt || 200) },
+                { name: "Bronze", req: Number(is.t2_inv || 25), amt: Number(is.t2_amt || 500) }, 
+                { name: "Silver", req: Number(is.t3_inv || 50), amt: Number(is.t3_amt || 820) },
+                { name: "Gold", req: Number(is.t4_inv || 60), amt: Number(is.t4_amt || 1100) },
+                { name: "Platinum", req: Number(is.t5_inv || 100), amt: Number(is.t5_amt || 1600) },
+                { name: "Diamond", req: Number(is.t6_inv || 125), amt: Number(is.t6_amt || 2400) },
+                { name: "Crown", req: Number(is.t7_inv || 150), amt: Number(is.t7_amt || 2900) },
+                { name: "Ambassador", req: Number(is.t8_inv || 200), amt: Number(is.t8_amt || 3500) },
+                { name: "Royal Partner", req: Number(is.t9_inv || 250), amt: Number(is.t9_amt || 4200) },
+                { name: "Global Director", req: Number(is.t10_inv || 300), amt: Number(is.t10_amt || 4800) }
+            ];
+            
+            let activeTier = null;
+            for (let i = tiers.length - 1; i >= 0; i--) {
+                if (userInvites >= tiers[i].req) { activeTier = tiers[i]; break; }
+            }
+            
+            const periodKey = getSalaryPeriodKey(salaryType);
+            if (activeTier) {
+                if (userData.lastSalaryDate === periodKey) {
+                    salaryStatusEl.innerHTML = `<span style="color: green; font-weight: bold;">${salaryLabel} Rs ${activeTier.amt} Claimed!</span>`;
+                } else {
+                    salaryStatusEl.innerHTML = `<button class="btn-primary" style="padding: 10px; font-size:12px; margin-top:5px; max-width: 250px; margin-left: auto; margin-right: auto;" onclick="claimDailySalary()"><i class="fa-solid fa-hand-holding-dollar"></i> Claim Rs ${activeTier.amt} ${salaryLabel}</button>`;
+                }
+            } else {
+                salaryStatusEl.innerHTML = `<span style="color: red; font-weight: bold;">Salary Locked (Need min ${tiers[0].req} active members with plans)</span>`;
+            }
+            
+            const list = document.getElementById('milestonesList');
+            list.innerHTML = '';
+            tiers.forEach((t, index) => {
+                let progressPercent = Math.min(100, (userInvites / t.req) * 100);
+                let statusBadge = '';
+                let cardBg = 'background: var(--white);';
+                let borderStyle = 'border-left: 4px solid #eee;';
+
+                if (userInvites >= t.req) {
+                    if (activeTier && activeTier.req === t.req) {
+                        statusBadge = `<span style="background: var(--success); color: white; padding: 4px 10px; border-radius: 8px; font-size: 11px; font-weight: bold;"><i class="fa-solid fa-circle-check"></i> Active Tier</span>`;
+                        cardBg = 'background: #f1f8e9;';
+                        borderStyle = 'border-left: 4px solid var(--success);';
+                    } else {
+                        statusBadge = `<span style="background: #cfd8dc; color: #37474f; padding: 4px 10px; border-radius: 8px; font-size: 11px; font-weight: bold;">Unlocked</span>`;
+                        borderStyle = 'border-left: 4px solid #90a4ae;';
+                    }
+                }
+                
+                list.innerHTML += `
+                    <div style="${cardBg} ${borderStyle} padding: 15px; margin-bottom: 12px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <div>
+                                <span style="font-size: 14px; font-weight: 700; color: var(--text);"><i class="fa-solid fa-medal" style="color: var(--secondary);"></i> ${t.name}: ${t.req} Invites</span>
+                                <p style="font-size: 12px; color: var(--gray); font-weight: 600; margin-top: 2px;">${salaryLabel}: <span style="color: var(--secondary); font-weight: 700;">Rs ${t.amt}</span></p>
+                            </div>
+                            <div>${statusBadge}</div>
+                        </div>
+                        <div style="width: 100%; background: #e0e0e0; height: 8px; border-radius: 10px; overflow: hidden;">
+                            <div style="width: ${progressPercent}%; background: linear-gradient(90deg, var(--secondary), var(--accent)); height: 100%; border-radius: 10px;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 10px; color: var(--gray); margin-top: 5px; font-weight: bold;">
+                            <span>Progress: ${userInvites} / ${t.req} members</span>
+                            <span>${progressPercent.toFixed(0)}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+        };
+
+        window.claimDailySalary = async () => {
+            loader.classList.remove('hidden');
+            const is = globalSettings.inviteSettings || defaultInviteSettings;
+            const salaryType = is.salary_type || "monthly";
+            const salaryLabel = salaryType === "daily" ? "Daily Salary" : salaryType === "weekly" ? "Weekly Salary" : "Monthly Salary";
+            
+            const tiers = [
+                { name: "Starter", req: Number(is.t1_inv || 10), amt: Number(is.t1_amt || 200) },
+                { name: "Bronze", req: Number(is.t2_inv || 25), amt: Number(is.t2_amt || 500) },
+                { name: "Silver", req: Number(is.t3_inv || 50), amt: Number(is.t3_amt || 820) },
+                { name: "Gold", req: Number(is.t4_inv || 60), amt: Number(is.t4_amt || 1100) },
+                { name: "Platinum", req: Number(is.t5_inv || 100), amt: Number(is.t5_amt || 1600) },
+                { name: "Diamond", req: Number(is.t6_inv || 125), amt: Number(is.t6_amt || 2400) },
+                { name: "Crown", req: Number(is.t7_inv || 150), amt: Number(is.t7_amt || 2900) },
+                { name: "Ambassador", req: Number(is.t8_inv || 200), amt: Number(is.t8_amt || 3500) },
+                { name: "Royal Partner", req: Number(is.t9_inv || 250), amt: Number(is.t9_amt || 4200) },
+                { name: "Global Director", req: Number(is.t10_inv || 300), amt: Number(is.t10_amt || 4800) }
+            ];
+
+            let userInvites = await getValidActiveInvitesCount(userData.inviteCode);
+            let activeTier = null;
+            for (let i = tiers.length - 1; i >= 0; i--) {
+                if (userInvites >= tiers[i].req) { activeTier = tiers[i]; break; }
+            }
+            
+            if (!activeTier) {
+                loader.classList.add('hidden');
+                return alert(`You need at least ${tiers[0].req} active invites to claim salary!`);
+            }
+            
+            const periodKey = getSalaryPeriodKey(salaryType);
+            if (userData.lastSalaryDate === periodKey) {
+                loader.classList.add('hidden');
+                return alert(`Already claimed this period's salary!`);
+            }
+            
+            try {
+                let newBal = (Number(userData.balance) || 0) + activeTier.amt;
+                await dbUpdateUser(currentUser.uid, { balance: newBal, lastSalaryDate: periodKey });
+                alert(`SUCCESS! Rs ${activeTier.amt} ${salaryLabel} credited to your account!`);
+                renderInviteEarnPage();
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally { loader.classList.add('hidden'); }
+        };
+
+        window.triggerDpUpload = () => { document.getElementById('dpInput').click(); };
+
+        window.uploadDp = (event) => {
+            const file = event.target.files[0];
+            if (!file || !file.type.startsWith('image/')) return alert("Select a valid image.");
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = 150; canvas.height = 150;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, 150, 150);
+                    const base64 = canvas.toDataURL('image/jpeg', 0.7);
+                    loader.classList.remove('hidden');
+                    dbUpdateUser(currentUser.uid, { dp: base64 }).then(() => {
+                        loader.classList.add('hidden'); alert("Profile picture updated!");
+                    });
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        };
+
+        window.submitSupportTicket = async () => {
+            const category = document.getElementById('supCategory').value;
+            const message = document.getElementById('supMessage').value.trim();
+            if(!message) return alert("Please describe your support!");
+
+            loader.classList.remove('hidden');
+            try {
+                await set(push(ref(db, 'support_tickets')), { uid: currentUser.uid, category: category, message: message, status: "Pending", reply: "", time: Date.now() });
+                document.getElementById('supMessage').value = '';
+                alert("Support submitted successfully!");
+                loadUserTickets();
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.loadUserTickets = () => {
+            if (!currentUser) return;
+            get(ref(db, 'support_tickets')).then((snap) => {
+                let html = "";
+                if(snap.exists()) {
+                    snap.forEach(child => {
+                        let t = child.val();
+                        if(t.uid === currentUser.uid) {
+                            let badgeColor = t.status === 'Pending' ? 'bg-warning' : 'bg-success';
+                            let replyHtml = t.reply ? `<p style="margin-top:5px; font-size:12px; color:var(--success);"><b>Admin Reply:</b> ${t.reply}</p>` : '';
+                            html += `
+                            <div class="h-item" style="flex-direction:column; align-items:flex-start; padding: 12px 0;">
+                                <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+                                    <h4 style="font-weight:700;">${t.category}</h4>
+                                    <span class="badge ${badgeColor}">${t.status}</span>
+                                </div>
+                                <p style="font-size:12px; margin-top:3px; color:#555;">${t.message}</p>
+                                ${replyHtml}
+                                <small style="font-size:9px; color:#999; margin-top:5px;">Submitted on: ${new Date(t.time).toLocaleString()}</small>
+                            </div>`;
+                        }
+                    });
+                }
+                document.getElementById('userTicketsList').innerHTML = html || `<p style="font-size:12px;text-align:center;color:#888;">No support requests submitted yet.</p>`;
+            });
+        };
+
+        window.openAdminPanel = async () => {
+            showPage('adminPage');
+            document.getElementById('admWA').value = globalSettings.whatsapp || "";
+            document.getElementById('admTG').value = globalSettings.telegram || "";
+            document.getElementById('admWeb').value = globalSettings.website || "";
+            document.getElementById('admAgentWA').value = globalSettings.agentWhatsapp || "923047374445";
+            
+            document.getElementById('admWithCond').value = globalSettings.withdrawCondition || 5;
+            document.getElementById('admMinWith').value = globalSettings.minWithdraw || 50;
+            document.getElementById('admStopEarn').value = globalSettings.earningStopped || "false";
+            document.getElementById('admStopReason').value = globalSettings.earningStopReason || "";
+            document.getElementById('admDistTime').value = globalSettings.profitDistributionTime || "05:00";
+            
+            let pay = globalSettings.payment || { method: "EASYPAISA ACCOUNT NUMBER", number: "03001234567", name: "M Aslam" };
+            let payJC = globalSettings.payment_jazzcash || { number: "03000000000", name: "JazzCash Holder" };
+            
+            document.getElementById('admPayMethod').value = pay.method || "";
+            document.getElementById('admPayNumber').value = pay.number || "";
+            document.getElementById('admPayName').value = pay.name || "";
+            document.getElementById('admJCNumber').value = payJC.number || "";
+            document.getElementById('admJCName').value = payJC.name || "";
+
+            // Here Admin views/edits Multi-Level rates
+            document.getElementById('admCommL1').value = globalSettings.commission_L1 !== undefined ? globalSettings.commission_L1 : (globalSettings.commission !== undefined ? globalSettings.commission : 6);
+            document.getElementById('admCommL2').value = globalSettings.commission_L2 !== undefined ? globalSettings.commission_L2 : 3;
+            document.getElementById('admCommL3').value = globalSettings.commission_L3 !== undefined ? globalSettings.commission_L3 : 1;
+            
+            document.getElementById('admRegBonus').value = globalSettings.registrationBonus !== undefined ? globalSettings.registrationBonus : 10;
+
+            let is = globalSettings.inviteSettings || defaultInviteSettings;
+            document.getElementById('admT1Inv').value = is.t1_inv || 10; document.getElementById('admT1Amt').value = is.t1_amt || 200;
+            document.getElementById('admT2Inv').value = is.t2_inv || 25; document.getElementById('admT2Amt').value = is.t2_amt || 500;
+            document.getElementById('admT3Inv').value = is.t3_inv || 50; document.getElementById('admT3Amt').value = is.t3_amt || 820;
+            document.getElementById('admT4Inv').value = is.t4_inv || 60; document.getElementById('admT4Amt').value = is.t4_amt || 1100;
+            document.getElementById('admT5Inv').value = is.t5_inv || 100; document.getElementById('admT5Amt').value = is.t5_amt || 1600;
+            document.getElementById('admT6Inv').value = is.t6_inv || 125; document.getElementById('admT6Amt').value = is.t6_amt || 2400;
+            document.getElementById('admT7Inv').value = is.t7_inv || 150; document.getElementById('admT7Amt').value = is.t7_amt || 2900;
+            document.getElementById('admT8Inv').value = is.t8_inv || 200; document.getElementById('admT8Amt').value = is.t8_amt || 3500;
+            document.getElementById('admT9Inv').value = is.t9_inv || 250; document.getElementById('admT9Amt').value = is.t9_amt || 4200;
+            document.getElementById('admT10Inv').value = is.t10_inv || 300; document.getElementById('admT10Amt').value = is.t10_amt || 4800;
+            document.getElementById('admSalaryType').value = is.salary_type || "monthly";
+
+            let rb = globalSettings.rulebook || {};
+            document.getElementById('admRbTitle').value = rb.title || "NOTIFICATION";
+            document.getElementById('admRbSubtitle').value = rb.subtitle || "RULEBOOK : FROM PLATFORM OFFICIAL";
+            document.getElementById('admRbRules').value = rb.rules || "";
+            document.getElementById('admRbLink').value = rb.link || "";
+
+            const uSnap = await get(ref(db, 'users'));
+            const rawUsers = uSnap.val() || {};
+            allUsersCache = {};
+            for (let k in rawUsers) allUsersCache[k] = decryptUserObject(rawUsers[k]);
+
+            loadAdminUsers();
+            loadAdminDeposits();
+            loadAdminWithdraws();
+            loadAdminPlans();
+            loadAdminTickets();
+        };
+
+        window.togglePermanentAntiBot = async (forceSync) => {
+            try {
+                const snap = await get(ref(db, 'users'));
+                if (!snap.exists()) return;
+                const rawUsers = snap.val();
+                for (let uid in rawUsers) {
+                    let u = decryptUserObject(rawUsers[uid]);
+                    if (u && !u.isBlocked) {
+                        checkAndProcessAutomaticTimerEarnings(uid, u);
+                    }
+                }
+                alert("24/7 Background Engine forced sync executed across all active users successfully.");
+            } catch (err) {
+                alert("Error forcing sync: " + err.message);
+            }
+        };
+
+        window.saveDistributionTime = async () => {
+            const distTime = document.getElementById('admDistTime').value;
+            if (!distTime) return alert("Select a valid time!");
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, 'settings'), { profitDistributionTime: distTime });
+                alert("Global Profit Distribution Time Updated to " + formatTime12Hour(distTime));
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.saveInviteSettings = async () => {
+            const isData = {
+                t1_inv: parseInt(document.getElementById('admT1Inv').value) || 10, t1_amt: parseInt(document.getElementById('admT1Amt').value) || 200,
+                t2_inv: parseInt(document.getElementById('admT2Inv').value) || 25, t2_amt: parseInt(document.getElementById('admT2Amt').value) || 500,
+                t3_inv: parseInt(document.getElementById('admT3Inv').value) || 50, t3_amt: parseInt(document.getElementById('admT3Amt').value) || 820,
+                t4_inv: parseInt(document.getElementById('admT4Inv').value) || 60, t4_amt: parseInt(document.getElementById('admT4Amt').value) || 1100,
+                t5_inv: parseInt(document.getElementById('admT5Inv').value) || 100, t5_amt: parseInt(document.getElementById('admT5Amt').value) || 1600,
+                t6_inv: parseInt(document.getElementById('admT6Inv').value) || 125, t6_amt: parseInt(document.getElementById('admT6Amt').value) || 2400,
+                t7_inv: parseInt(document.getElementById('admT7Inv').value) || 150, t7_amt: parseInt(document.getElementById('admT7Amt').value) || 2900,
+                t8_inv: parseInt(document.getElementById('admT8Inv').value) || 200, t8_amt: parseInt(document.getElementById('admT8Amt').value) || 3500,
+                t9_inv: parseInt(document.getElementById('admT9Inv').value) || 250, t9_amt: parseInt(document.getElementById('admT9Amt').value) || 4200,
+                t10_inv: parseInt(document.getElementById('admT10Inv').value) || 300, t10_amt: parseInt(document.getElementById('admT10Amt').value) || 4800,
+                salary_type: document.getElementById('admSalaryType').value || "monthly"
+            };
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, 'settings/inviteSettings'), isData);
+                alert("Salary Settings Updated Successfully!");
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.loadAdminPlans = () => {
+            const list = document.getElementById('adminPlansList');
+            list.innerHTML = '';
+            currentPlans.forEach((p, index) => {
+                list.innerHTML += `
+                    <div class="admin-card" style="margin-bottom:15px; border-left: 4px solid var(--accent);">
+                        <h4 style="color:var(--primary); margin-bottom:10px;">Edit ${p.name}</h4>
+                        <div class="input-group"><label>Plan Name</label><input type="text" id="admPlanName_${index}" value="${p.name}"></div>
+                        <div class="input-group"><label>Plan Price (Rs)</label><input type="number" id="admPlanPrice_${index}" value="${p.price}"></div>
+                        <div class="input-group"><label>Daily Profit (Rs)</label><input type="number" id="admPlanDaily_${index}" value="${p.daily}"></div>
+                        <div class="input-group"><label>Total Profit (Rs)</label><input type="number" id="admPlanTotal_${index}" value="${p.total || (p.daily * 55)}"></div>
+                        <div class="input-group">
+                            <label>Status Tag</label>
+                            <select id="admPlanPopular_${index}">
+                                <option value="false" ${!p.isPopular ? 'selected' : ''}>Standard</option>
+                                <option value="true" ${p.isPopular ? 'selected' : ''}>Popular </option>
+                            </select>
+                        </div>
+                        <button class="btn-primary" onclick="savePlanSettings(${index})">Save Package Details</button>
+                    </div>
+                `;
+            });
+        };
+
+        window.savePlanSettings = async (index) => {
+            const name = document.getElementById(`admPlanName_${index}`).value;
+            const price = parseInt(document.getElementById(`admPlanPrice_${index}`).value);
+            const daily = parseInt(document.getElementById(`admPlanDaily_${index}`).value);
+            const total = parseInt(document.getElementById(`admPlanTotal_${index}`).value);
+            const isPopular = document.getElementById(`admPlanPopular_${index}`).value === "true";
+
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, `settings/plans/${index}`), { name, price, daily, total, isPopular });
+                alert(`${name} updated successfully!`);
+                setTimeout(loadAdminPlans, 500);
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.loadAdminDeposits = async () => {
+            const list = document.getElementById('adminPendingDeposits');
+            list.innerHTML = 'Loading...';
+            const snap = await get(ref(db, 'deposits'));
+            let html = '';
+            if(snap.exists()) {
+                snap.forEach(child => {
+                    let d = child.val();
+                    let did = child.key;
+                    let uName = (allUsersCache[d.uid] && allUsersCache[d.uid].name) ? allUsersCache[d.uid].name : 'Unknown User';
+                    if(d.status === 'Pending') {
+                        html += `
+                        <div class="user-row" style="border-left: 4px solid #00c853;">
+                            <p><b>User:</b> ${uName}</p>
+                            <p><b>Method:</b> ${d.depMethod || 'Easypaisa'}</p> 
+                            <p><b>Plan:</b> ${d.planName} (Rs ${d.amount})</p>
+                            <p><b>Sender:</b> ${d.senderName} (${d.senderNumber})</p>
+                            <p><b>Trx ID:</b> ${d.trxId}</p>
+                            <div style="margin-top:10px; display:flex; gap:10px;">
+                                <button onclick="approveDeposit('${did}', '${d.uid}', ${d.amount}, ${d.planDaily}, '${d.planName}')" style="background:green;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Approve</button>
+                                <button onclick="rejectDeposit('${did}', '${d.uid}', ${d.amount})" style="background:red;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Reject</button>
+                            </div>
+                        </div>`;
+                    }
+                });
+            }
+            list.innerHTML = html || 'No pending deposits.';
+        };
+
+        window.approveDeposit = async (did, uid, amount, daily, planName) => {
+            if(!confirm("Approve this deposit?")) return;
+            let uSnap = await get(ref(db, 'users/' + uid));
+            let u = decryptUserObject(uSnap.val());
+            let newInvest = (Number(u.totalInvest) || 0) + Number(amount);
+            
+            let activePlans = u.activePlans || {};
+            let newPlanId = Date.now().toString() + "_" + Math.floor(1000 + Math.random() * 9000);
+            let expiryTime = Date.now() + (55 * 24 * 60 * 60 * 1000);
+
+            activePlans[newPlanId] = {
+                name: planName || "VIP",
+                daily: Number(daily),
+                price: Number(amount),
+                expiryDate: expiryTime,
+                activatedAt: Date.now()
+            };
+
+            let totalDailyProfit = 0;
+            for (let k in activePlans) {
+                totalDailyProfit += Number(activePlans[k].daily);
+            }
+
+            let pDep = Math.max(0, (Number(u.pendingDep) || 0) - Number(amount));
+            
+            // --- 3-LEVEL REFERRAL COMMISSION LOGIC ---
+            if(u.referredByCode) {
+                let allUsersSnap = await get(ref(db, 'users'));
+                let rawUsers = allUsersSnap.val();
+                let userMap = {};
+                let codeToUid = {};
+                for(let key in rawUsers) {
+                    let decU = decryptUserObject(rawUsers[key]);
+                    userMap[key] = decU;
+                    codeToUid[decU.inviteCode] = key;
+                }
+
+                let commL1 = globalSettings.commission_L1 !== undefined ? Number(globalSettings.commission_L1) : (globalSettings.commission !== undefined ? Number(globalSettings.commission) : 6);
+                let commL2 = globalSettings.commission_L2 !== undefined ? Number(globalSettings.commission_L2) : 3;
+                let commL3 = globalSettings.commission_L3 !== undefined ? Number(globalSettings.commission_L3) : 1;
+                let levels = [commL1, commL2, commL3];
+                
+                let isFirstPlan = (Number(u.totalInvest || 0) === 0);
+                let currentLevelUserCode = u.referredByCode;
+                
+                for(let i=0; i<3; i++) {
+                    if(!currentLevelUserCode) break;
+                    let parentUid = codeToUid[currentLevelUserCode];
+                    if(!parentUid) break;
+                    
+                    let parentUser = userMap[parentUid];
+                    let comm = Number(amount) * (levels[i] / 100);
+                    
+                    let updates = {
+                        balance: Number(((parentUser.balance || 0) + comm).toFixed(2))
+                    };
+                    
+                    if(i === 0 && isFirstPlan) {
+                        updates.teamActive = (parentUser.teamActive || 0) + 1;
+                    }
+                    
+                    await dbUpdateUser(parentUid, updates);
+                    currentLevelUserCode = parentUser.referredByCode; // Navigate recursively upwards
+                }
+            }
+            // ------------------------------------------
+            
+            let currentBal = Number(u.balance || 0);
+            let instantBonusProfit = Number(daily);
+            let updatedBal = Number((currentBal + instantBonusProfit).toFixed(2));
+
+            await dbUpdateUser(uid, { 
+                balance: updatedBal,
+                totalInvest: newInvest, 
+                planDailyProfit: totalDailyProfit, 
+                pendingDep: pDep,
+                planExpiryDate: expiryTime, 
+                activePlans: activePlans,
+                lastTimerCreditedTime: Date.now()
+            });
+            await update(ref(db, 'deposits/' + did), { status: 'Complete' });
+            alert("Deposit Approved! Package Activated & First Day's Profit (Rs " + instantBonusProfit + ") Credited Instantly!");
+            openAdminPanel(); 
+        };
+
+        window.rejectDeposit = async (did, uid, amount) => {
+            let reason = prompt("Enter rejection reason:") || "Verification details mismatch";
+            let uSnap = await get(ref(db, 'users/' + uid));
+            let u = decryptUserObject(uSnap.val());
+            let pDep = Math.max(0, (u.pendingDep || 0) - amount);
+            await dbUpdateUser(uid, { pendingDep: pDep });
+            await update(ref(db, 'deposits/' + did), { status: 'Rejected', rejectReason: reason });
+            alert("Deposit Rejected.");
+            openAdminPanel(); 
+        };
+
+        window.loadAdminWithdraws = async () => {
+            const list = document.getElementById('adminPendingWithdraws');
+            list.innerHTML = 'Loading...';
+            const snap = await get(ref(db, 'withdrawals'));
+            let html = '';
+            let totalPendingW = 0;
+            if(snap.exists()) {
+                snap.forEach(child => {
+                    let w = child.val();
+                    let wid = child.key;
+                    let uName = (allUsersCache[w.uid] && allUsersCache[w.uid].name) ? allUsersCache[w.uid].name : 'Unknown User';
+                    if(w.status === 'Pending') {
+                        totalPendingW += Number(w.amount || 0);
+                        html += `
+                        <div class="user-row" style="border-left: 4px solid #e53935;">
+                            <p><b>User:</b> ${uName}</p>
+                            <p><b>Method:</b> ${w.method}</p>
+                            <p><b>Account:</b> ${w.accName} (${w.accNum})</p>
+                            <p><b>Amount:</b> Rs ${w.amount}</p>
+                            <div style="margin-top:10px; display:flex; gap:10px;">
+                                <button onclick="approveWithdraw('${wid}', '${w.uid}', ${Number(w.amount)})" style="background:green;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Approve</button>
+                                <button onclick="rejectWithdraw('${wid}', '${w.uid}', ${Number(w.amount)})" style="background:red;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Reject & Refund</button>
+                            </div>
+                        </div>`;
+                    }
+                });
+            }
+            list.innerHTML = html || 'No pending withdrawals.';
+            document.getElementById('st_pwith').innerText = "Rs " + totalPendingW.toFixed(0);
+        };
+
+        window.approveWithdraw = async (wid, uid, amount) => {
+            if(!confirm("Approve withdrawal?")) return;
+            let uSnap = await get(ref(db, 'users/' + uid));
+            let u = decryptUserObject(uSnap.val());
+            await dbUpdateUser(uid, { 
+                pendingWith: Math.max(0, (Number(u.pendingWith) || 0) - Number(amount)), 
+                totalWith: (Number(u.totalWith) || 0) + Number(amount)
+            });
+            await update(ref(db, 'withdrawals/' + wid), { status: 'successful withdraw' });
+            alert("Withdrawal Approved!");
+            openAdminPanel(); 
+        };
+
+        window.rejectWithdraw = async (wid, uid, amount) => {
+            let reason = prompt("Enter rejection reason:") || "Provided account information is invalid";
+            let uSnap = await get(ref(db, 'users/' + uid));
+            if (uSnap.exists()) {
+                let u = decryptUserObject(uSnap.val());
+                await dbUpdateUser(uid, { 
+                    pendingWith: Math.max(0, (Number(u.pendingWith) || 0) - Number(amount)), 
+                    balance: (Number(u.balance) || 0) + Number(amount) 
+                });
+                await update(ref(db, 'withdrawals/' + wid), { status: 'Rejected', rejectReason: reason });
+                alert("Withdrawal Rejected & Refunded.");
+                openAdminPanel(); 
+            }
+        };
+
+        window.loadAdminTickets = async () => {
+            const list = document.getElementById('adminTicketsList');
+            list.innerHTML = 'Loading tickets...';
+            const snap = await get(ref(db, 'support_tickets'));
+            let html = '';
+            if(snap.exists()) {
+                snap.forEach(child => {
+                    let t = child.val();
+                    let tid = child.key;
+                    let uName = (allUsersCache[t.uid] && allUsersCache[t.uid].name) ? allUsersCache[t.uid].name : 'Unknown User';
+                    let replySection = t.status === 'Pending' ? `
+                        <div style="margin-top:10px;">
+                            <textarea id="replyMsg_${tid}" placeholder="Type support answer..." style="width:100%; padding:10px; border-radius:8px; font-size:12px; background:#fff; color:#000; border:1px solid #ccc;"></textarea>
+                            <button onclick="submitAdminReply('${tid}')" style="background:#00c853; color:white; border:none; padding:6px 15px; border-radius:6px; cursor:pointer; margin-top:5px; font-weight:bold;">Send Reply</button>
+                        </div>` : `<p style="color:#00c853; margin-top:5px;"><b>Replied:</b> ${t.reply}</p>`;
+
+                    html += `
+                    <div class="user-row" style="border-left: 4px solid var(--accent); color:#333;">
+                        <p><b>User:</b> ${uName}</p>
+                        <p><b>Category:</b> ${t.category}</p>
+                        <p><b>Issue:</b> ${t.message}</p>
+                        <p><b>Status:</b> ${t.status}</p>
+                        ${replySection}
+                    </div>`;
+                });
+            }
+            list.innerHTML = html || 'No support tickets found.';
+        };
+
+        window.submitAdminReply = async (tid) => {
+            const reply = document.getElementById(`replyMsg_${tid}`).value.trim();
+            if(!reply) return alert("Input reply text!");
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, 'support_tickets/' + tid), { reply: reply, status: "Answered" });
+                alert("Reply submitted!");
+                loadAdminTickets();
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.savePaymentSettings = async () => {
+            const method = document.getElementById('admPayMethod').value;
+            const number = document.getElementById('admPayNumber').value;
+            const name = document.getElementById('admPayName').value;
+            const jcNumber = document.getElementById('admJCNumber').value;
+            const jcName = document.getElementById('admJCName').value;
+
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, 'settings/payment'), { method, number, name });
+                await update(ref(db, 'settings/payment_jazzcash'), { number: jcNumber, name: jcName });
+                alert("Payment details successfully updated!");
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        // This function handles saving the Multi-level Commission Settings!
+        window.saveCommissionSettings = async () => {
+            const l1 = parseFloat(document.getElementById('admCommL1').value);
+            const l2 = parseFloat(document.getElementById('admCommL2').value);
+            const l3 = parseFloat(document.getElementById('admCommL3').value);
+            if (isNaN(l1) || isNaN(l2) || isNaN(l3)) return alert("Enter valid numeric values!");
+            loader.classList.remove('hidden');
+            try {
+                // commission variable kept for backwards compatibility
+                await update(ref(db, 'settings'), { commission_L1: l1, commission_L2: l2, commission_L3: l3, commission: l1 });
+                alert("Multi-Level Commission rates updated successfully!");
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.saveRegBonusSettings = async () => {
+            const regBonusVal = parseFloat(document.getElementById('admRegBonus').value);
+            if (isNaN(regBonusVal)) return alert("Enter valid numeric value!");
+            loader.classList.remove('hidden');
+            try {
+                await update(ref(db, 'settings'), { registrationBonus: regBonusVal });
+                alert("Registration bonus updated!");
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.saveRulebookSettings = async () => {
+            const title = document.getElementById('admRbTitle').value;
+            const subtitle = document.getElementById('admRbSubtitle').value;
+            const rules = document.getElementById('admRbRules').value;
+            const link = document.getElementById('admRbLink').value;
+            await update(ref(db, 'settings/rulebook'), { title, subtitle, rules, link });
+            alert("Rulebook Updated!");
+        };
+
+        window.saveAdminSettings = async () => {
+            await update(ref(db, 'settings'), { 
+                whatsapp: document.getElementById('admWA').value, 
+                telegram: document.getElementById('admTG').value, 
+                website: document.getElementById('admWeb').value, 
+                withdrawCondition: document.getElementById('admWithCond').value, 
+                minWithdraw: document.getElementById('admMinWith').value,
+                agentWhatsapp: document.getElementById('admAgentWA').value 
+            });
+            alert("App Settings Updated!");
+        };
+
+        window.saveEarningStatus = async () => {
+            await update(ref(db, 'settings'), { 
+                earningStopped: document.getElementById('admStopEarn').value, 
+                earningStopReason: document.getElementById('admStopReason').value 
+            });
+            alert("Global Earning Status Updated!");
+        };
+
+        window.adminCreatePromo = async () => {
+            const c = document.getElementById('admPromoCode').value.toUpperCase().trim();
+            const a = parseInt(document.getElementById('admPromoAmt').value);
+            const exp = document.getElementById('admPromoExpiry').value;
+            if(!c || !a || !exp) return alert("Fill all promo fields!");
+            await set(ref(db, 'promos/' + c), { amount: a, active: true, expiry: new Date(exp).getTime() });
+            alert("Promo Code Created!");
+            document.getElementById('admPromoCode').value = '';
+            document.getElementById('admPromoAmt').value = '';
+            document.getElementById('admPromoExpiry').value = '';
+        };
+
+        window.removeUserPlan = async (uid, planKey) => {
+            if(!confirm("Remove plan?")) return;
+            loader.classList.remove('hidden');
+            try {
+                let uSnap = await get(ref(db, 'users/' + uid));
+                if (uSnap.exists()) {
+                    let u = decryptUserObject(uSnap.val());
+                    let activePlans = u.activePlans || {};
+                    let planToRemove = activePlans[planKey];
+                    if (planToRemove) {
+                        delete activePlans[planKey];
+                        let totalDailyProfit = 0;
+                        let latestExpiryDate = 0;
+                        for (let k in activePlans) {
+                            totalDailyProfit += Number(activePlans[k].daily);
+                            if (activePlans[k].expiryDate > latestExpiryDate) latestExpiryDate = activePlans[k].expiryDate;
+                        }
+                        let newTotalInvest = Math.max(0, (Number(u.totalInvest) || 0) - (Number(planToRemove.price) || 0));
+                        await dbUpdateUser(uid, { activePlans, planDailyProfit: totalDailyProfit, planExpiryDate: latestExpiryDate > 0 ? latestExpiryDate : null, totalInvest: newTotalInvest });
+                        alert("Plan removed successfully!");
+                        loadAdminUsers();
+                    }
+                }
+            } catch(e) { alert(e.message); } finally { loader.classList.add('hidden'); }
+        };
+
+        window.promptBlockUser = (uid) => {
+            let reason = prompt("Reason for block?") || "Violation";
+            dbUpdateUser(uid, { isBlocked: true, blockReason: reason }).then(() => { alert("User Blocked!"); openAdminPanel(); });
+        };
+
+        window.unblockUser = (uid) => {
+            dbUpdateUser(uid, { isBlocked: false, blockReason: "" }).then(() => { alert("User Unblocked!"); openAdminPanel(); });
+        };
+
+        window.loadAdminUsers = async () => {
+            const list = document.getElementById('adminUserList');
+            list.innerHTML = 'Fetching users securely...';
+            try {
+                let html = "";
+                let totalUsers = 0, totalBal = 0, totalInv = 0;
+
+                // Group by IP
+                let ipGroups = {};
+
+                for (let uid in allUsersCache) {
+                    let u = allUsersCache[uid];
+                    totalUsers++;
+                    totalBal += Number(u.balance || 0);
+                    totalInv += Number(u.totalInvest || 0);
+
+                    let ip = u.lastIP || "Unknown IP";
+                    if (!ipGroups[ip]) ipGroups[ip] = [];
+                    ipGroups[ip].push({ uid: uid, ...u });
+                }
+
+                for (let ip in ipGroups) {
+                    let usersInIp = ipGroups[ip];
+                    let isMultiple = usersInIp.length > 1 && ip !== "Unknown IP";
+                    let ipWarning = isMultiple ? ` <span style="background:red;color:white;padding:2px 5px;border-radius:4px;font-size:10px;">Multiple Accounts (${usersInIp.length})</span>` : "";
+                    
+                    html += `<div style="background:#333; color:white; padding:8px 12px; margin-top:15px; border-radius:5px 5px 0 0; font-weight:bold; font-size:13px; border-bottom:2px solid var(--accent); display:flex; justify-content:space-between; align-items:center;">
+                        <span><i class="fa-solid fa-network-wired"></i> IP: ${ip}</span>
+                        ${ipWarning}
+                    </div>`;
+
+                    usersInIp.forEach(u => {
+                        let uid = u.uid;
+                        let blockedStatus = u.isBlocked ? `<span style="color:red; font-weight:bold;">BLOCKED</span>` : `<span style="color:green; font-weight:bold;">ACTIVE</span>`;
+                        let plansHtml = "";
+                        let activePlans = u.activePlans || {};
+                        if (Object.keys(activePlans).length > 0) {
+                            plansHtml += `<div style="margin-top: 8px; padding: 10px; background: #eef2f6; border-radius: 8px; font-size:11px; color:#333;"><b>Active Packages:</b><ul style="margin-left: 15px; margin-top:5px; list-style-type:none; padding-left:0;">`;
+                            for (let k in activePlans) {
+                                let p = activePlans[k];
+                                plansHtml += `<li style="margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; background:white; padding:4px 8px; border-radius:4px; border:1px solid #ddd;"><span><b>${p.name}</b> (Rs ${p.price} | Daily: Rs ${p.daily})</span><button onclick="removeUserPlan('${uid}', '${k}')" style="background:#e53935; color:white; border:none; padding:4px 8px; border-radius:4px; cursor:pointer; font-size:10px;">Remove</button></li>`;
+                            }
+                            plansHtml += `</ul></div>`;
+                        } else plansHtml += `<p style="font-size:11px; color:#666; margin-top:5px;"><b>Active Packages:</b> None</p>`;
+
+                        let actionBtn = !u.isBlocked ? `<button onclick="promptBlockUser('${uid}')" style="background:orange;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Block</button>` : `<button onclick="unblockUser('${uid}')" style="background:green;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Unblock</button>`;
+
+                        html += `
+                        <div class="user-row" style="color:#222; margin-bottom:5px; border-radius:0 0 5px 5px; border-left:4px solid ${isMultiple ? 'red' : 'var(--primary)'}; border-top:none;">
+                            <p><b>Name:</b> ${u.name || 'Unknown'} (${blockedStatus})</p>
+                            <p><b>Email:</b> ${u.email || u.authEmail || 'N/A'}</p>
+                            <p><b>Phone:</b> ${u.phone || 'Not Bound'} | <b>Pass:</b> ${u.password || 'Hidden'}</p>
+                            <p><b>Bal:</b> Rs ${Number(u.balance || 0).toFixed(0)} | <b>Invest:</b> Rs ${u.totalInvest || 0} | <b>Invites:</b> ${u.totalInvites || 0}</p>
+                            ${plansHtml}
+                            <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+                                <button onclick="editUserBalance('${uid}')" style="background:#0d47a1;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Edit Balance</button>
+                                ${actionBtn}
+                                <button onclick="deleteUser('${uid}')" style="background:#b71c1c;color:white;border:none;padding:5px 10px;border-radius:5px;cursor:pointer;">Delete</button>
+                            </div>
+                        </div>`;
+                    });
+                }
+                list.innerHTML = html || "No users found.";
+                document.getElementById('st_users').innerText = totalUsers;
+                document.getElementById('st_bal').innerText = "Rs " + totalBal.toFixed(0);
+                document.getElementById('st_inv').innerText = "Rs " + totalInv.toFixed(0);
+            } catch (error) { list.innerHTML = `<span style="color:red;">Error: ${error.message}</span>`; }
+        };
+
+        window.editUserBalance = async (uid) => {
+            let action = prompt("Enter amount to add (use minus '-' to deduct)\nExample: 500 or -500");
+            if(action === null || action === "") return;
+            let val = parseFloat(action);
+            if(isNaN(val)) return alert("Invalid Amount!");
+            let uSnap = await get(ref(db, 'users/' + uid));
+            let u = decryptUserObject(uSnap.val());
+            let newBal = Math.max(0, (Number(u.balance) || 0) + val);
+            await dbUpdateUser(uid, { balance: newBal });
+            alert("Balance updated!");
+            openAdminPanel(); 
+        };
+
+        window.deleteUser = async (uid) => {
+            if(confirm("Permanently delete this user?")) {
+                await set(ref(db, 'users/' + uid), null);
+                alert("User deleted!");
+                openAdminPanel(); 
+            }
+        };
+
+        window.loadTeamHistory = () => {
+            get(ref(db, 'users')).then((snap) => {
+                let html = "";
+                if(snap.exists()) {
+                    snap.forEach(child => {
+                        let u = decryptUserObject(child.val());
+                        if(u.referredByCode === userData.inviteCode) {
+                            let status = (u.totalInvest > 0 || (u.activePlans && Object.keys(u.activePlans).length > 0)) ? '<span class="badge bg-success">Active (Counts for Salary)</span>' : '<span class="badge bg-warning">Free</span>';
+                            html += `<div class="h-item"><div><h4>${u.name}</h4><p>Joined: ${new Date(u.createdAt).toLocaleDateString()}</p></div>${status}</div>`;
+                        }
+                    });
+                }
+                document.getElementById('listTeam').innerHTML = html || `<p style="font-size:12px;text-align:center;color:#888;">No team members found</p>`;
+            });
+        };
+        
+        window.loadHistory = () => {
+            get(ref(db, 'deposits')).then((snap) => {
+                let html = "";
+                if(snap.exists()) {
+                    snap.forEach(child => {
+                        let d = child.val();
+                        if(d.uid === currentUser.uid) {
+                            let color = d.status === 'Pending' ? 'bg-warning' : d.status === 'Rejected' ? 'bg-warning' : 'bg-success';
+                            let reasonText = (d.status === 'Rejected' && d.rejectReason) ? `<br><small style="color:#e53935; font-weight:bold;">Reason: ${d.rejectReason}</small>` : '';
+                            html += `<div class="h-item"><div><h4>${d.planName}</h4><p>${new Date(d.timestamp).toLocaleDateString()} | Trx: ${d.trxId}${reasonText}</p></div><div style="text-align:right;"><h4 style="color:var(--primary);">Rs ${d.amount}</h4><span class="badge ${color}">${d.status}</span></div></div>`;
+                        }
+                    });
+                }
+                document.getElementById('listDeposits').innerHTML = html || `<p style="font-size:12px;text-align:center;color:#888;">No deposit history found</p>`;
+            });
+
+            get(ref(db, 'withdrawals')).then((snap) => {
+                let html = "";
+                if(snap.exists()) {
+                    snap.forEach(child => {
+                        let w = child.val();
+                        if(w.uid === currentUser.uid) {
+                            let color = w.status === 'Pending' ? 'bg-warning' : w.status === 'Rejected' ? 'bg-warning' : 'bg-success';
+                            let reasonText = (w.status === 'Rejected' && w.rejectReason) ? `<br><small style="color:#e53935; font-weight:bold;">Reason: ${w.rejectReason}</small>` : '';
+                            html += `<div class="h-item"><div><h4>${w.method}</h4><p>${new Date(w.time).toLocaleDateString()} | Acc: ${w.accNum}${reasonText}</p></div><div style="text-align:right;"><h4 style="color:red;">- Rs ${w.amount}</h4><span class="badge ${color}">${w.status}</span></div></div>`;
+                        }
+                    });
+                }
+                document.getElementById('listWithdraws').innerHTML = html || `<p style="font-size:12px;text-align:center;color:#888;">No withdrawal history found</p>`;
+            });
+        };
+    </script>
+</body>
+</html>
